@@ -7,7 +7,7 @@
 ---
 
 ### 10/19/24:
-* [Read this article](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api)
+* Read this article called [Designing and implementing a weather data API](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api)
 
 ### X/X/XX:
 * Text
