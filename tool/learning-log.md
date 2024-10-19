@@ -1,13 +1,13 @@
 # Tool Learning Log
 
-## Tool: **Jason apis**
+## Tool: **JSON APIs**
 
 ## Project: **Dress based on the weather app**
 
 ---
 
-### X/X/XX:
-* Text
+### 10/19/24:
+* https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api
 
 ### X/X/XX:
 * Text
