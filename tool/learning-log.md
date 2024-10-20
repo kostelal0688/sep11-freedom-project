@@ -15,6 +15,8 @@
 * Watched this tutorial [Weather API Project Tutorial using HTML, CSS, and JavaScript | For Beginners](https://www.youtube.com/watch?v=JubKY5p3qRc)
 * [W3shools tutorials ](https://www.w3schools.com/js/js_json_intro.asp)
    * Completed tutorials.
+* [Read this article] (https://weatherstack.com/free-weather-api-no-key#:~:text=Among%20the%20free%20Weather%20APIs,need%20for%20an%20API%20key.)
+  * Talks about the best free weather APIs that don't require a key
    
       
 
