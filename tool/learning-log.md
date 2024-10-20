@@ -18,7 +18,7 @@
 * [Read this article] (https://weatherstack.com/free-weather-api-no-key#:~:text=Among%20the%20free%20Weather%20APIs,need%20for%20an%20API%20key.)
   * Talks about the best free weather APIs that don't require a key
 * Next steps
-   *  continue learning about JSON APIs
+   *  Continue learning about JSON APIs
    
       
 
