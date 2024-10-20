@@ -13,7 +13,8 @@
 * Read this blog of [Designing and implementing a weather data API](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api)
 * Watched this 30 minutes video [Weather App (JSON data download via API) - WeatherAPI.com](https://www.youtube.com/watch?v=QY8KvyzZUQ4)
 * Watched this tutorial [Weather API Project Tutorial using HTML, CSS, and JavaScript | For Beginners](https://www.youtube.com/watch?v=JubKY5p3qRc)
-* 
+* [W3shools tutorials ](https://www.w3schools.com/js/js_json_intro.asp)
+   * Completed tutorials.
    
       
 
