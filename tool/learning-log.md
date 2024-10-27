@@ -26,6 +26,9 @@
    * [weather](ny-weather.png)
    * [Open-Meteo Weather Forecast API](https://open-meteo.com/en/docs#latitude=40.7143&longitude=-74.006&current=temperature_2m&forecast_days=1)
 * However its still using latitude and longitude
+* Watched this turtorial ( Weather App using Open Weather API | Recharts | Open-Meteo API)[https://www.youtube.com/watch?v=LHAAT9cnQlY]
+
+
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
