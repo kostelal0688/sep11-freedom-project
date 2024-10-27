@@ -22,9 +22,8 @@
    
       
 
-### X/X/XX:
-* Text
-
+### 10/17/24:
+* Tried make something to show the weather in jsbin using Open-Meteo APIs 
 
 <!-- 
 * Links you used today (websites, videos, etc)
