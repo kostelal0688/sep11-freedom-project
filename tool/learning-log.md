@@ -24,8 +24,9 @@
 ### 10/17/24:
 * Tried make something to show the weather in jsbin using Open-Meteo APIs
 
-   * [weather](ny-weather.png) 
-
+   * [weather](ny-weather.png)
+   * [Open-Meteo Weather Forecast API](https://open-meteo.com/en/docs#latitude=40.7143&longitude=-74.006&current=temperature_2m&forecast_days=1)
+* However its still using latitude and longitude
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
