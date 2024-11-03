@@ -2,7 +2,7 @@
 ##### 10/28/24
 
 ## Choosing a Tool & Topic
-
+The tool that I have chosen for the year-long project is JSON APIs. JSON APIs allow various applications to communicate through a standard format known as JSON (JavaScript Object Notation). Apps are able to easily exchange data, like user information or product details, by using them. JSON APIs structure data in a clear way, making it easier for developers to understand and work with. This consistency helps speed up development and reduces errors.
 
 ## Engineering Design Process 
 I am currently in steps 1 and 2 of the engineering design process, where the goal is to \
