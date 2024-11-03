@@ -6,7 +6,7 @@ The tool that I have chosen for the year-long project is JSON APIs. JSON APIs al
 
 I will create a app where it shows you what to wear based on the weather. In my app, users will receive personalized outfit suggestions based on the current weather conditions. Through the integration of a weather JSON API, I am able to get current information on temperature, and other weather factors.
 
-To understand more about JSON APIs I watched this [Weather JSON APIs tutorial](https://www.youtube.com/watch?v=LHAAT9cnQlY) and tried to follow along in  jsbin. In addition, I read this article [Designing and implementing a weather data API](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api) to help me understand how to implement weather API. I also 
+To understand more about JSON APIs I watched this [Weather JSON APIs tutorial](https://www.youtube.com/watch?v=LHAAT9cnQlY) and tried to follow along in  jsbin. In addition, I read this article [Designing and implementing a weather data API](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api) to help me understand how to implement weather API. I also completed these [W3schools Tutorials](https://www.w3schools.com/js/js_json_intro.asp).
 I tinkered with JSON APIs by 
 
 ## Engineering Design Process 
