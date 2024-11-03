@@ -8,7 +8,7 @@ I will create a app where it shows you what to wear based on the weather. In my 
 
 To understand more about JSON APIs I watched this [Weather JSON APIs tutorial](https://www.youtube.com/watch?v=LHAAT9cnQlY) and tried to follow along in  jsbin. In addition, I read this article [Designing and implementing a weather data API](https://www.tinybird.co/blog-posts/designing-and-implementing-a-weather-data-api) to help me understand how to implement weather API. I also completed these [W3schools Tutorials](https://www.w3schools.com/js/js_json_intro.asp).
 
-I tinkered with JSON APIs in jsbin by trying to make something that would show the current weather of New York. This is a image of what I made [NY Wather]()
+I tinkered with JSON APIs in jsbin by trying to make something that would show the current weather of New York. This is a image of what I made [NY Weather](ny-weather.png)
 
 ## Engineering Design Process 
 I am currently in steps 1 and 2 of the engineering design process, which focus on defining and researching. First, we defined our topic, which helped us understand what we wanted to create. Next, we researched our tool to find out which one would work best for our project. This involved looking up different options, reading about their features, and checking out reviews. By doing this, we could make an informed choice about the tools we would use for our app.
