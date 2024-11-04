@@ -30,8 +30,9 @@
 * Watched this turtorial [Weather App using Open Weather API | Recharts | Open-Meteo API](https://www.youtube.com/watch?v=LHAAT9cnQlY)
 * Next steps
    *  Search more about using zip code rather than latitude and longitude
-### 11/4/2024
 
+### 11/4/2024
+* 
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
