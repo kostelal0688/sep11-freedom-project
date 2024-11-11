@@ -34,8 +34,7 @@
 ### 11/4/2024  - 11/11/2024
 * [Open Meteo](https://open-meteo.com/)
     * The official documentation for the Open Meteo API, with detailed information on how to make requests for weather data, including temperature, wind, precipitation, etc.
-    * Helps understand how to request data
-      
+    * Helps understand how to request data    
 * Open Meteo API Endpoint:
 
    `https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true`
