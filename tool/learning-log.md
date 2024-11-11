@@ -51,6 +51,9 @@
 * Learn JSON with JavaScript (How to parse JSON)
      * [MDN JSON Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
      * This guide explains how JSON works and how you can analyze JSON data, which is key for handling responses from APIs like Open Meteo.
+* Next steps
+   *  Try to build something with Open Metro APIs
+
 
 
 
