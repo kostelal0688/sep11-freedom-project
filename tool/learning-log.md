@@ -33,7 +33,8 @@
 
 ### 11/4/2024
 * [Open Meteo](https://open-meteo.com/)
-    * understand how to request data
+    * The official documentation for the Open Meteo API, with detailed information on how to make requests for weather data, including temperature, wind, precipitation, etc.
+    * Helps understand how to request data
 * Learn How to Make API Requests
    * API Request URL Format: Open Meteo provides weather data by making HTTP requests to specific API endpoints.
   * Example: To get a forecast for a specific location, you can use:
@@ -42,6 +43,8 @@
   
     * latitude and longitude specify the location.
     * hourly=temperature_2m specifies the data you want (temperature at 2 meters above ground).
+* [Open Meteo GitHub Repository](https://github.com/Open-Meteo)
+    * Here you can find the source code, examples, and additional resources related to the Open Meteo API.
 
 
 
