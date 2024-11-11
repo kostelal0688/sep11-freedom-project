@@ -31,7 +31,7 @@
 * Next steps
    *  Search more about using zip code rather than latitude and longitude
 
-### 11/4/2024
+### 11/4/2024  - 11/11/2024
 * [Open Meteo](https://open-meteo.com/)
     * The official documentation for the Open Meteo API, with detailed information on how to make requests for weather data, including temperature, wind, precipitation, etc.
     * Helps understand how to request data
