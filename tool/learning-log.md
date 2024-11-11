@@ -45,6 +45,9 @@
     * hourly=temperature_2m specifies the data you want (temperature at 2 meters above ground).
 * [Open Meteo GitHub Repository](https://github.com/Open-Meteo)
     * Here you can find the source code, examples, and additional resources related to the Open Meteo API.
+* Learn JSON with JavaScript (How to parse JSON)
+     * [MDN JSON Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+     * This guide explains how JSON works and how you can analyze JSON data, which is key for handling responses from APIs like Open Meteo.
 
 
 
