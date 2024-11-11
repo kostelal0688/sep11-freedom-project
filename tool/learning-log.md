@@ -35,14 +35,18 @@
 * [Open Meteo](https://open-meteo.com/)
     * The official documentation for the Open Meteo API, with detailed information on how to make requests for weather data, including temperature, wind, precipitation, etc.
     * Helps understand how to request data
-* Learn How to Make API Requests
-   * API Request URL Format: Open Meteo provides weather data by making HTTP requests to specific API endpoints.
-  * Example: To get a forecast for a specific location, you can use:
-  
-  ` https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.6917&hourly=temperature_2m`
-  
-    * latitude and longitude specify the location.
-    * hourly=temperature_2m specifies the data you want (temperature at 2 meters above ground).
+      
+* Open Meteo API Endpoint:
+
+   `https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true`
+
+     * latitude: Latitude of the location.
+     * longitude: Longitude of the location.
+     * current_weather=true: This tells the API to return current weather data.
+* For example:
+   * To get current weather for New York:
+
+`https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true`
 * [Open Meteo GitHub Repository](https://github.com/Open-Meteo)
     * Here you can find the source code, examples, and additional resources related to the Open Meteo API.
 * Learn JSON with JavaScript (How to parse JSON)
