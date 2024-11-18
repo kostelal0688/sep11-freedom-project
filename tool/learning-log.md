@@ -57,6 +57,9 @@
      * This tutorial covers the basics of the Fetch API in JavaScript. This is essential for understanding how to interact with external APIs like Open Meteo.
 * Next steps
    *  Try to build something with Open Metro APIs
+ 
+### 11/18/24: 
+
 
 
 
