@@ -2,7 +2,7 @@
 ##### 10/28/24
 
 ## Choosing a Tool & Topic
-For my year-long project, I’ve chosen to work with JSON APIs. JSON APIs enable different applications to communicate through a standardized format called JSON (JavaScript Object Notation). This format allows apps to easily exchange data—such as user information, product details, or weather updates—by structuring the data in a clear and easy-to-understand way. This clarity not only helps developers work more efficiently but also reduces errors, speeding up development by creating a seamless interaction between systems.
+For my year-long project, I’ve chosen to work with JSON APIs. JSON APIs enable different applications to communicate through a standardized format called JSON (JavaScript Object Notation). This format allows apps to easily exchange data such as user information, product details, or weather updates—by structuring the data in a clear and easy to understand way. This clarity not only helps developers work more efficiently but also reduces errors, speeding up development by creating a seamless interaction between systems.
 
 The app I’m developing will provide users with personalized outfit suggestions based on the current weather conditions. By integrating a weather JSON API, I can pull real-time data, such as temperature, humidity, wind speed, and forecast details, to generate outfit recommendations. The goal of this app is to help users plan their day, making it easier for them to decide what to wear based on reliable, up-to-date weather information.
 
