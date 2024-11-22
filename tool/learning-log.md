@@ -67,6 +67,7 @@
 
  `https://nominatim.openstreetmap.org/search?postalcode=94040&country=USA&format=json`
 
+
     * This will return latitude and longitude that you can then pass to Open-Meteo.
 
 
