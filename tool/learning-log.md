@@ -63,11 +63,11 @@
     * I could use this to add icons based on weather
 * For Open-Meteo: Open-Meteo primarily uses latitude and longitude for location. If you still want to use zip codes, you might need a geocoding service (like Geocoding API or Nominatim), which converts zip codes or addresses to latitude and longitude, then use the latitude/longitude with the Open-Meteo API.
 
-Example using Nominatim (OpenStreetMap's API):
+* Example using Nominatim (OpenStreetMap's API):
 
  `https://nominatim.openstreetmap.org/search?postalcode=94040&country=USA&format=json`
 
-This will return latitude and longitude that you can then pass to Open-Meteo.
+    * This will return latitude and longitude that you can then pass to Open-Meteo.
 
 
 
