@@ -62,6 +62,9 @@
 * [Add icons to represent each weather](https://github.com/open-meteo/open-meteo/issues/789)
     * I could use this to add icons based on weather
 * For Open-Meteo: Open-Meteo primarily uses latitude and longitude for location. If you still want to use zip codes, you might need a geocoding service (like Geocoding API or Nominatim), which converts zip codes or addresses to latitude and longitude, then use the latitude/longitude with the Open-Meteo API.
+* Currently, I am using latitude and longitude to get weather data, but to switch to zip codes to make it easier for users to input locations. I need to check API Documentation: Some APIs, like OpenWeatherMap, accept zip codes directly in their request URL. For example, you could make a request like:
+
+`https://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=YOUR_API_KEY`
 
 * Example using Nominatim (OpenStreetMap's API):
 
