@@ -61,6 +61,17 @@
 ### 11/18/24: 
 * [Add icons to represent each weather](https://github.com/open-meteo/open-meteo/issues/789)
     * I could use this to add icons based on weather
+ 
+Background Changes Based on Weather: Change the background of your app based on the weather (e.g., a sunny background for clear weather, dark clouds for rainy weather). You can use CSS to change background images dynamically.
+
+```js
+Copy code
+if (weatherCondition === "Clear") {
+  document.body.style.backgroundImage = "url('sunny.jpg')";
+} else if (weatherCondition === "Rainy") {
+  document.body.style.backgroundImage = "url('rainy.jpg')";
+}
+```
 * Currently, I am using latitude and longitude to get weather data, but to switch to zip codes to make it easier for users to input locations. I need to check API Documentation: Some APIs, like OpenWeatherMap, accept zip codes directly in their request URL. For example, you could make a request like:
 
 `https://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=YOUR_API_KEY`
