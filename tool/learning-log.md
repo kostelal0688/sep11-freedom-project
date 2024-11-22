@@ -87,6 +87,9 @@ if (weatherCondition === "Clear") {
 
 `https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&hourly=temperature_2m,p`
 
+* [Forecasting weather with Open-Meteo API](https://medium.com/@owmo13/forecasting-weather-with-open-meteo-api-using-jetpack-compose-7e58387f10e1)
+    * Example of weather app using JSON APIs
+
 
 
 
