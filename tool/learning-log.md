@@ -72,6 +72,9 @@
  `
 
  *  This will return latitude and longitude that you can then pass to Open-Meteo.
+ *  Hourly Weather Forecasts: If your API supports it, you can display the weather forecast for the upcoming hours. For example, Open-Meteo provides forecasts for the next 24 hours.Example API Call for Hourly Data:
+
+`https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&hourly=temperature_2m,p`
 
 
 
