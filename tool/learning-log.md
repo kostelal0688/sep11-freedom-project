@@ -89,6 +89,10 @@ if (weatherCondition === "Clear") {
 
 * [Forecasting weather with Open-Meteo API](https://medium.com/@owmo13/forecasting-weather-with-open-meteo-api-using-jetpack-compose-7e58387f10e1)
     * Example of weather app using JSON APIs
+* [Geolocation in Weather App](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
+    * Adding Geolocation to Your Weather App – This tutorial shows how to use the browser's geolocation API to get the user's current location and display the weather for that location.
+
+
 
 
 
