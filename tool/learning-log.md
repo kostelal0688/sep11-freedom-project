@@ -91,7 +91,8 @@ if (weatherCondition === "Clear") {
     * Example of weather app using JSON APIs
 * [Geolocation in Weather App](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
     * Adding Geolocation to Your Weather App – This tutorial shows how to use the browser's geolocation API to get the user's current location and display the weather for that location.
-
+* Next steps
+    * Try to build something with Open Metro APIs
 
 
 
