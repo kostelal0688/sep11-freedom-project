@@ -58,7 +58,7 @@
 * Next steps
    *  Try to build something with Open Metro APIs
  
-### 11/18/24 - 11/22/24
+### 11/18/24 - 11/24/24
 * [Add icons to represent each weather](https://github.com/open-meteo/open-meteo/issues/789)
     * I could use this to add icons based on weather
  
