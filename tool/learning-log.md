@@ -91,6 +91,11 @@ if (weatherCondition === "Clear") {
     * Example of weather app using JSON APIs
 * [Geolocation in Weather App](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
     * Adding Geolocation to Your Weather App – This tutorial shows how to use the browser's geolocation API to get the user's current location and display the weather for that location.
+* Units of Measurement
+    * Some users may prefer different units, like temperature in Celsius or Fahrenheit. Make sure your app supports unit conversion (e.g., Celsius to Fahrenheit or meters per second to miles per hour). OpenWeatherMap and other APIs support units like:
+         * metric (Celsius, meters per second)
+         * imperial (Fahrenheit, miles per hour)
+
 * Next steps
     * Try to build something with Open Metro APIs
 
