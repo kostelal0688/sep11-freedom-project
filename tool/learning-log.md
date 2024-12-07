@@ -100,8 +100,8 @@ if (weatherCondition === "Clear") {
     * Try to build something with Open Metro APIs
 
 ### 12/2/24 - 12/8/24
-Tinkered by making a a simple weather-based dressing app using HTML, CSS, JavaScript arrays, functions, conditions, and loops. 
-   *   tool/tinkering
+Tinkered by making a simple weather-based dressing app using HTML, CSS, JavaScript arrays, functions, conditions, and loops. 
+   *   [This is the link to my simple weather-based dressing app](https://github.com/kostelal0688/sep11-freedom-project/blob/main/tool/tinkering)
 * **How I made it:**
 * HTML : The page includes a title, radio buttons for Celsius and Fahrenheit selection, and a container to display the weather information `(<div id="weather-info"></div>)`.
 JavaScript:
