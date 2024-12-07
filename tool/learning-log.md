@@ -116,7 +116,7 @@ JavaScript:
 * Loops:
     * The forEach() method is used to loop through each city in the cities array and fetch its weather.
     * The result for each city is dynamically inserted into the weather-info container.
-* How It Works:
+* **How It Works:**
     * Weather Fetching: The getWeather() function fetches weather data for the cities from the Open Meteo API.
     * Unit Conversion: The user can toggle between Celsius and Fahrenheit, which automatically converts the temperature in the app.
 
