@@ -100,7 +100,25 @@ if (weatherCondition === "Clear") {
     * Try to build something with Open Metro APIs
 
 12/2/24 - 12/8/24
-
+Tinkered by making a a simple weather-based dressing app using HTML, CSS, JavaScript arrays, functions, conditions, and loops. 
+   *
+* How I made it:
+* HTML : The page includes a title, radio buttons for Celsius and Fahrenheit selection, and a container to display the weather information `(<div id="weather-info"></div>)`.
+JavaScript:
+* Array of Cities: The cities array holds multiple cities with their latitude and longitude.
+* Toggle Functionality: The radio buttons (Celsius and Fahrenheit) allow the user to toggle between temperature units.  
+* Fetch Weather Data: The getWeather() function makes API calls to Open Meteo to fetch current weather for each city.
+* Temperature Conversion: The temperature is either in Celsius or Fahrenheit, depending on the user’s choice. The conversion between Celsius and Fahrenheit is handled by a simple formula.
+* Clothing Suggestion: The suggestClothing() function takes the temperature and returns an appropriate clothing suggestion based on conditions (if, else).
+* Functions:
+    * getWeather(): Fetches weather data for all cities using a loop and displays it.
+    * suggestClothing(): Takes a temperature and returns a clothing suggestion using conditional statements.
+* Loops:
+    * The forEach() method is used to loop through each city in the cities array and fetch its weather.
+    * The result for each city is dynamically inserted into the weather-info container.
+* How It Works:
+    * Weather Fetching: The getWeather() function fetches weather data for the cities from the Open Meteo API.
+    * Unit Conversion: The user can toggle between Celsius and Fahrenheit, which automatically converts the temperature in the app.
 
 
 <!--
