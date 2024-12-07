@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Based on Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .city-info {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 250px;
+            text-align: left;
+        }
+
+        .city-info h3 {
+            margin: 0;
+            color: #4CAF50;
+        }
+
+        .city-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dress Based on Weather</h1>
+
+    <label><input type="radio" name="unit" id="celsius" checked> Celsius</label>
+    <label><input type="radio" name="unit" id="fahrenheit"> Fahrenheit</label>
+
+    <div id="weather-info"></div>
+
+    <script>
+        let temperatureUnit = 'C';  // Default to Celsius
+        const cities = [
+            { name: 'Berlin', lat: 52.52, lon: 13.4050 },
+            { name: 'London', lat: 51.5074, lon: -0.1278 },
+            { name: 'New York', lat: 40.7128, lon: -74.0060 },
+            { name: 'Tirana', lat: 41.3275, lon: 19.8189 }
+        ];
+
+        // Toggle between Celsius and Fahrenheit
+        document.getElementById('celsius').onclick = function() { temperatureUnit = 'C'; getWeather(); };
+        document.getElementById('fahrenheit').onclick = function() { temperatureUnit = 'F'; getWeather(); };
+
+        // Fetch weather data for all cities
+        function getWeather() {
+            let container = document.getElementById('weather-info');
+            container.innerHTML = ''; // Clear previous results
+
+            cities.forEach(city => {
+                const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const tempCelsius = data.current_weather.temperature;
+                        const temperature = temperatureUnit === 'C' ? tempCelsius : (tempCelsius * 9/5) + 32;
+                        const clothing = suggestClothing(temperature);
+
+                        // Display weather and suggestion
+                        container.innerHTML += `
+                            <div class="city-info">
+                                <h3>${city.name}</h3>
+                                <p>Temperature: ${temperature}°${temperatureUnit}</p>
+                                <p>Clothing Suggestion: ${clothing}</p>
+                            </div>
+                        `;
+                    });
+            });
+        }
+
+        // Suggest clothing based on temperature
+        function suggestClothing(temp) {
+            if (temp <= 32) {
+                return 'Wear a winter coat, gloves, and scarf.';
+            } else if (temp <= 50) {
+                return 'Wear a jacket and sweater.';
+            } else if (temp <= 68) {
+                return 'Wear a light jacket or sweater.';
+            } else if (temp <= 86) {
+                return 'Wear a t-shirt and shorts.';
+            } else {
+                return 'Wear light, breathable clothing.';
+            }
+        }
+
+        // Initial weather data fetch
+        getWeather();
+    </script>
+</body>
+</html>
 
