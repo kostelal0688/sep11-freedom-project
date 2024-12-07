@@ -99,7 +99,7 @@ if (weatherCondition === "Clear") {
 * Next steps
     * Try to build something with Open Metro APIs
 
-
+12/2/24 - 12/8/24
 
 
 
