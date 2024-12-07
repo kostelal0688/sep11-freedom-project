@@ -101,7 +101,7 @@ if (weatherCondition === "Clear") {
 
 ### 12/2/24 - 12/8/24
 Tinkered by making a a simple weather-based dressing app using HTML, CSS, JavaScript arrays, functions, conditions, and loops. 
-   *
+   *   tool/tinkering
 * **How I made it:**
 * HTML : The page includes a title, radio buttons for Celsius and Fahrenheit selection, and a container to display the weather information `(<div id="weather-info"></div>)`.
 JavaScript:
