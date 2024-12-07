@@ -67,7 +67,7 @@
         // Fetch weather data for all cities
         function getWeather() {
             let container = document.getElementById('weather-info');
-            container.innerHTML = ''; // Clear previous results
+            container.innerHTML = ''; // 
 
             cities.forEach(city => {
                 const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lon}&current_weather=true`;
