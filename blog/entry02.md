@@ -1,4 +1,4 @@
-2w# Entry 2
+# Entry 2
 ##### 12/9/24
 
 Text
