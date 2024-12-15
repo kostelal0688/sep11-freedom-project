@@ -96,7 +96,18 @@ getWeather();
 ```
 In conclusion, this web application serves as a practical tool for checking the weather in multiple cities, with clothing suggestions to current temperatures by using Open Meteo API and HTML, CSS, and JavaScript. Through this project, I've gained hands-on experience working with APIs, handling data, and building interactive web applications.
 
+## Engineering Design Process 
+I am currently in steps 
 
+## Skills 
+Some skills that I’ve learned from working on this blog are **consideraion,** and **how to google**
+### Consideration
+One skill that I learned during this experience is 
+
+### How to Google 
+Another skill that I learned during this experience is
+## Summary
+To conclude, I am really excited to continue working on this project. My next step is to start planing my app. 
 
 
 
