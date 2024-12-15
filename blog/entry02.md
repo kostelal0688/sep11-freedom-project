@@ -99,7 +99,7 @@ In conclusion, this web application serves as a practical tool for checking the 
 My specific goal for winter break is to improve and expand the weather app I started using the Open Meteo API. I aim to build a fully functional and interactive weather application that provides detailed weather forecasts, clothing suggestions based on the weather, and allows users to switch between Celsius and Fahrenheit.
 
 ## Engineering Design Process 
-I am currently in steps 
+I am currently in steps 2 & 3 of the engineering designing process. I currently learning about Open Meteo and testing code out, trying to see what I should and should not use on my project. I'm doing my research on what I need to learn about Open Meteo. 
 
 ## Skills 
 Some skills that I’ve learned from working on this blog are **consideraion,** and **how to google**
@@ -108,6 +108,7 @@ One skill that I learned during this experience is
 
 ### How to Google 
 Another skill that I learned during this experience is
+
 ## Summary
 To conclude, I am really excited to continue working on this project. My next step is to start planing my app. 
 
