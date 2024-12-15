@@ -1,4 +1,4 @@
-# Entry 2
+# Entry 2 (Learning My Tool)
 ##### 12/9/24
 
 Text
