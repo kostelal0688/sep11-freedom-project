@@ -112,8 +112,3 @@ Another skill that I learned during this experience is
 ## Summary
 To conclude, I am really excited to continue working on this project. My next step is to start planing my app. 
 
-
-
-[Previous](entry01.md) | [Next](entry03.md)
-
-[Home](../README.md)
