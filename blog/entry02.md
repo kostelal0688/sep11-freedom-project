@@ -1,6 +1,7 @@
 # Entry 2 (Learning My Tool)
 ##### 12/9/24
 
+### Content
 Over the past few weeks, I’ve been diving deeper into JSON APIs, particularly Open Meteo, a powerful tool for accessing weather data. To put my learning into practice, I created a simple yet functional web application that allows users to check the weather in several cities, receive personalized clothing suggestions based on the temperature, and toggle between Celsius and Fahrenheit units for a more customized experience.
 
 This project relies on the [Open Meteo API](https://open-meteo.com/), which provides real-time weather information, including temperature, wind speed, precipitation, and more. With this data, the app suggests appropriate clothing based on the current temperature. Below, I’ll break down the core components of the website: HTML, CSS, and JavaScript, explaining how each part works together to provide the user with an engaging experience.
