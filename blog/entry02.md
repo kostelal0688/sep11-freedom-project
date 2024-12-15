@@ -73,7 +73,22 @@ fetch(apiUrl)
     }
 }
 ```
+* Displaying Weather Data:
+    * After fetching the weather data and calculating the temperature based on the user's selection, the information is dynamically displayed on the page inside the #weather-info container. Each city’s weather data (temperature and clothing suggestion) is shown in a styled div element with the class city-info.
 
+```js
+container.innerHTML += `
+    <div class="city-info">
+        <h3>${city.name}</h3>
+        <p>Temperature: ${temperature}°${temperatureUnit}</p>
+        <p>Clothing Suggestion: ${clothing}</p>
+    </div>
+`;
+```
+* The getWeather function is called initially when the page loads to display the weather data for all cities.
+```js
+getWeather();
+```
 
 
 
