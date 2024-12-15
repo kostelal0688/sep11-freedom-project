@@ -37,6 +37,21 @@ const cities = [
     { name: 'Tirana', lat: 41.3275, lon: 19.8189 }
 ];
 ```
+* Fetching Weather Data:
+    * The getWeather function fetches the weather data for each city using the Open-Meteo API. The API provides the current temperature based on latitude and longitude.
+    * The weather data is fetched using the fetch function, and the temperature is converted based on the selected unit (Celsius or Fahrenheit).
+javascript
+```js
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const tempCelsius = data.current_weather.temperature;
+        const temperature = temperatureUnit === 'C' ? tempCelsius : (tempCelsius * 9/5) + 32;
+        const clothing = suggestClothing(temperature);
+        ...
+    });
+```
+
 
 
 
