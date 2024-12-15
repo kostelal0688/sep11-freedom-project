@@ -5,11 +5,10 @@ During the past few weeks I have been learning more about JSON APIs Open Meteo. 
 HTML Structure:
  * The HTML structure includes a heading, radio buttons to toggle between Celsius and Fahrenheit, a container (div with id="weather-info") where the weather data and clothing suggestions for different cities will be displayed, and a <script> tag where JavaScript functionality resides.
 html
-  ```<h1>Dress Based on Weather</h1>
-
-    <label><input type="radio" name="unit" id="celsius" checked> Celsius</label>
+  ```html
+     <h1>Dress Based on Weather</h1>
+     <label><input type="radio" name="unit" id="celsius" checked> Celsius</label>
      <label><input type="radio" name="unit" id="fahrenheit"> Fahrenheit</label>
-
      <div id="weather-info"></div>
   ```
 
