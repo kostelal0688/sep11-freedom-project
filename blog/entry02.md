@@ -96,6 +96,8 @@ getWeather();
 ```
 In conclusion, this web application serves as a practical tool for checking the weather in multiple cities, with clothing suggestions to current temperatures by using Open Meteo API and HTML, CSS, and JavaScript. Through this project, I've gained hands-on experience working with APIs, handling data, and building interactive web applications.
 
+My specific goal for winter break is to improve and expand the weather app I started using the Open Meteo API. I aim to build a fully functional and interactive weather application that provides detailed weather forecasts, clothing suggestions based on the weather, and allows users to switch between Celsius and Fahrenheit.
+
 ## Engineering Design Process 
 I am currently in steps 
 
