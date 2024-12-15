@@ -93,7 +93,7 @@ container.innerHTML += `
 ```js
 getWeather();
 ```
-
+In conclusion, this web application serves as a practical tool for checking the weather in multiple cities, with clothing suggestions to current temperatures by using Open Meteo API and HTML, CSS, and JavaScript. Through this project, I've gained hands-on experience working with APIs, handling data, and building interactive web applications.
 
 
 
