@@ -96,18 +96,19 @@ getWeather();
 ```
 In conclusion, this web application serves as a practical tool for checking the weather in multiple cities, with clothing suggestions to current temperatures by using Open Meteo API and HTML, CSS, and JavaScript. Through this project, I've gained hands-on experience working with APIs, handling data, and building interactive web applications.
 
+### Winter Break Goal
 My specific goal for winter break is to improve and expand the weather app I started using the Open Meteo API. I aim to build a fully functional and interactive weather application that provides detailed weather forecasts, clothing suggestions based on the weather, and allows users to switch between Celsius and Fahrenheit.
 
 ## Engineering Design Process 
-I am currently in steps 2 & 3 of the engineering designing process. I currently learning about Open Meteo and testing code out, trying to see what I should and should not use on my project. I'm doing my research on what I need to learn about Open Meteo. 
+I am currently in steps 2 and 3 of the engineering design process. I’m learning more about Open Meteo and testing code, trying to figure out what features to include in my project. I'm doing my research on what I need to learn about Open Meteo. 
 
 ## Skills 
 Some skills that I’ve learned from working on this blog are **consideraion,** and **how to google**
 ### Consideration
-One skill that I learned during this experience is 
+One key skill I’ve learned is the importance of consideration, thinking critically about the features I want to build, such as how to organize weather data and how to structure the app for an engaging user experience.
 
 ### How to Google 
-Another skill that I learned during this experience is
+Another important skill I’ve improved is how to Google. I’ve had to troubleshoot and research many aspects of the Open Meteo API, and JavaScript functions. Learning how to search effectively for solutions has been very valuable.
 
 ## Summary
 To conclude, I am really excited to continue working on this project. My next step is to start planing my app. 
