@@ -51,6 +51,28 @@ fetch(apiUrl)
         ...
     });
 ```
+* Clothing Suggestions:
+  * The suggestClothing function provides clothing recommendations based on the current temperature:
+      * Below 32°F (0°C): Winter coat, gloves, and scarf.
+       * Between 32°F (0°C) and 50°F (10°C): Jacket and sweater.
+      * Between 50°F (10°C) and 68°F (20°C): Light jacket or sweater.
+      * Between 68°F (20°C) and 86°F (30°C): T-shirt and shorts.
+      * Above 86°F (30°C): Light, breathable clothing.
+```js
+   function suggestClothing(temp) {
+    if (temp <= 32) {
+        return 'Wear a winter coat, gloves, and scarf.';
+    } else if (temp <= 50) {
+        return 'Wear a jacket and sweater.';
+    } else if (temp <= 68) {
+        return 'Wear a light jacket or sweater.';
+    } else if (temp <= 86) {
+        return 'Wear a t-shirt and shorts.';
+    } else {
+        return 'Wear light, breathable clothing.';
+    }
+}
+```
 
 
 
