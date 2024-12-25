@@ -136,7 +136,8 @@ if (weatherCondition === "Clear") {
 }
 ```
 
-
+* [Using the Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
+    * Read this article
 
 * Next Steps:
     * Geolocation Feature: Integrate the ability for the app to automatically detect the user's location and show the weather for that location. This would require using the browser's Geolocation API.
