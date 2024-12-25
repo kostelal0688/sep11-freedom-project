@@ -119,6 +119,7 @@ JavaScript:
 * **How It Works:**
     * Weather Fetching: The getWeather() function fetches weather data for the cities from the Open Meteo API.
     * Unit Conversion: The user can toggle between Celsius and Fahrenheit, which automatically converts the temperature in the app.
+### 12/16/24 - 1/2/25
 
 
 <!--
