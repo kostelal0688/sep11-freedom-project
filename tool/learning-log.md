@@ -127,7 +127,6 @@ JavaScript:
     * Integrated weather icons based on conditions fetched from the API. For instance, if the weather is "Clear", it shows a sun icon, "Rainy" shows a rain cloud, and so on.I used the weather condition data (like "Clear", "Rain", etc.) from the Open-Meteo API to assign icons.
 Example:
 ```js
-Copy code
 if (weatherCondition === "Clear") {
     document.body.style.backgroundImage = "url('sunny.jpg')";
     weatherIcon.src = "sun-icon.png";  // Example for icon
