@@ -120,7 +120,22 @@ JavaScript:
     * Weather Fetching: The getWeather() function fetches weather data for the cities from the Open Meteo API.
     * Unit Conversion: The user can toggle between Celsius and Fahrenheit, which automatically converts the temperature in the app.
 ### 12/16/24 - 1/2/25
-
+ * Continued improving my weather-based dressing app using HTML, CSS, and JavaScript.
+ * Improved functionality by incorporating weather icons to visually represent weather conditions (sunny, cloudy, rainy, etc.).
+* Key Improvements:
+    * Weather Icons:
+    * Integrated weather icons based on conditions fetched from the API. For instance, if the weather is "Clear", it shows a sun icon, "Rainy" shows a rain cloud, and so on.I used the weather condition data (like "Clear", "Rain", etc.) from the Open-Meteo API to assign icons.
+Example:
+```js
+Copy code
+if (weatherCondition === "Clear") {
+    document.body.style.backgroundImage = "url('sunny.jpg')";
+    weatherIcon.src = "sun-icon.png";  // Example for icon
+} else if (weatherCondition === "Rain") {
+    document.body.style.backgroundImage = "url('rainy.jpg')";
+    weatherIcon.src = "rain-icon.png";
+}
+```
 
 <!--
 * Links you used today (websites, videos, etc)
