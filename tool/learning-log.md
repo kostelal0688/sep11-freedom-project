@@ -135,11 +135,9 @@ if (weatherCondition === "Clear") {
     weatherIcon.src = "rain-icon.png";
 }
 ```
-
+* Geolocation API Integration
 * [Using the Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
     * Read this article
-
-* Next Steps:
     * Geolocation Feature: Integrate the ability for the app to automatically detect the user's location and show the weather for that location. This would require using the browser's Geolocation API.
 
 ```js
@@ -153,6 +151,41 @@ if (navigator.geolocation) {
     alert("Geolocation is not supported by this browser.");
 }
 ```
+* Open-Meteo is a great way to fetch weather data based on latitude and longitude. You can combine this with the Geolocation API to automatically detect the user's location and provide real-time weather for that location.
+
+   * Here’s how you can use the Geolocation API in the browser to get the user's current location and then use that information to fetch weather data:
+
+```js
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+        
+        // Construct the Open-Meteo API URL with the user's location
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+        
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const temp = data.current_weather.temperature;
+                const condition = data.current_weather.weathercode;
+                let weatherDescription = '';
+
+                // Map the weather code to actual conditions
+                if (condition === 0) weatherDescription = 'Clear';
+                else if (condition === 1) weatherDescription = 'Partly Cloudy';
+                else if (condition === 2) weatherDescription = 'Cloudy';
+                else if (condition === 3) weatherDescription = 'Rainy';
+                
+                console.log(`Temperature: ${temp}°C, Condition: ${weatherDescription}`);
+            })
+            .catch(error => console.log('Error fetching data:', error));
+    });
+} else {
+    console.log("Geolocation is not supported by this browser.");
+}
+```
+This feature will enable your app to provide users with weather data for their exact location without needing them to input coordinates.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
