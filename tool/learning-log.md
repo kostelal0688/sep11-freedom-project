@@ -136,6 +136,22 @@ if (weatherCondition === "Clear") {
 }
 ```
 
+
+
+* Next Steps:
+    * Geolocation Feature: Integrate the ability for the app to automatically detect the user's location and show the weather for that location. This would require using the browser's Geolocation API.
+
+```js
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+        // Use lat and lon in the API call
+    });
+} else {
+    alert("Geolocation is not supported by this browser.");
+}
+```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
