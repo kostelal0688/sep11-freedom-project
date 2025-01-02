@@ -188,6 +188,8 @@ if (navigator.geolocation) {
 }
 ```
 This feature will enable your app to provide users with weather data for their exact location without needing them to input coordinates.
+* Next steps
+   * Try to build something with Geoloction.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
