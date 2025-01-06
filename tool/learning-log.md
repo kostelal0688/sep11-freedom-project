@@ -187,9 +187,13 @@ if (navigator.geolocation) {
     console.log("Geolocation is not supported by this browser.");
 }
 ```
+
 This feature will enable your app to provide users with weather data for their exact location without needing them to input coordinates.
 * Next steps
    * Try to build something with Geoloction.
+
+ ### 1/6/25 - 1/8/25
+* 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
