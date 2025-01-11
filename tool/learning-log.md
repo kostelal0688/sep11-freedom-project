@@ -192,8 +192,11 @@ This feature will enable your app to provide users with weather data for their e
 * Next steps
    * Try to build something with Geoloction.
 
- ### 1/6/25 - 1/8/25
-* 
+ ### 1/6/25 - 1/13/25
+* Integrated Zip Code Input:
+   * Implemented a feature allowing users to input a zip code. The zip code is converted into latitude and longitude using the Nominatim API and passed into the Open-Meteo API to fetch the weather data.
+    * [Nominatim API](https://nominatim.org/release-docs/3.6/develop/Postcodes/)
+    * Example API call: `https://nominatim.openstreetmap.org/search?postalcode=94040&country=USA&format=json` to retrieve coordinates.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
