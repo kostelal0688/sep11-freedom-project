@@ -220,7 +220,7 @@ Example Open-Meteo API call using the coordinates (latitude: 37.3861, longitude:
   4. Display Weather Data:
       * The weather data returned from Open-Meteo is processed and displayed on the app, providing the user with real-time weather information for the location they entered.
 * Example:
-  ```js
+   ```js
   <!-- HTML Input for Zip Code -->
 <input type="text" id="zipCode" placeholder="Enter zip code">
 <button onclick="getWeatherFromZipCode()">Get Weather</button>
@@ -260,7 +260,7 @@ function getWeatherFromZipCode() {
         });
 }
 </script>
-   ```
+      ```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
