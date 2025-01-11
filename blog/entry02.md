@@ -94,13 +94,22 @@ container.innerHTML += `
 ```js
 getWeather();
 ```
+In addition, I learned how to [add icons to represent each weather](https://github.com/open-meteo/open-meteo/issues/789) conditions. First, identify the weather types (e.g., sunny, rainy, cloudy) and find corresponding icons. For example, when the weather is sunny, you can show a sun icon. This approach makes the weather display more visually engaging and easier for users to understand. 
+   * For example:
+   *  ```js
+     <div id="weather">
+     <img src="sunny-icon.png" alt="Sunny" id="weather-icon">
+     <p>Weather: Sunny</p>
+     </div>
+    ```
+
 In conclusion, this web application serves as a practical tool for checking the weather in multiple cities, with clothing suggestions to current temperatures by using Open Meteo API and HTML, CSS, and JavaScript. Through this project, I've gained hands-on experience working with APIs, handling data, and building interactive web applications.
 
 ### Winter Break Goal
 My specific goal for winter break is to improve and expand the weather app I started using the Open Meteo API. I aim to build a fully functional and interactive weather application that provides detailed weather forecasts, clothing suggestions based on the weather, and allows users to switch between Celsius and Fahrenheit.
 
 ## Engineering Design Process 
-I am currently in steps 2 and 3 of the engineering design process. I’m learning more about Open Meteo and testing code, trying to figure out what features to include in my project. I'm doing my research on what I need to learn about Open Meteo. 
+I'm currently in steps 2 and 3 of the engineering design process, where I'm learning more about Open Meteo and testing code to understand its capabilities. At this stage, I'm researching the various features offered by Open Meteo, such as weather data types, API integration, and how to retrieve and display information like temperature, precipitation, and wind speed. I’m also experimenting with integrating weather icons based on the data I receive. Once I gather enough information, I will move on to step 4, where I’ll plan the most promising solution. This will involve selecting the best features to include in my project, designing the user interface, and determining how to present the weather data in a user-friendly way.
 
 ## Skills 
 Some skills that I’ve learned from working on this blog are **consideraion,** and **how to google**
