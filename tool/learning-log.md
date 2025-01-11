@@ -212,7 +212,13 @@ This feature will enable your app to provide users with weather data for their e
   }
 ]
 ```
-
+  3. Fetch Weather Data:
+      * Using the coordinates from Nominatim, the app constructs an API request to the Open-Meteo API to retrieve the weather data for the location.
+Example Open-Meteo API call using the coordinates (latitude: 37.3861, longitude: -122.0838):
+`https://api.open-meteo.com/v1/forecast?latitude=37.3861&longitude=-122.0838&current_weather=true`
+      * This will return weather data for the specific location, such as the current temperature, weather conditions, etc.
+  4. Display Weather Data:
+      * The weather data returned from Open-Meteo is processed and displayed on the app, providing the user with real-time weather information for the location they entered.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
