@@ -219,6 +219,48 @@ Example Open-Meteo API call using the coordinates (latitude: 37.3861, longitude:
       * This will return weather data for the specific location, such as the current temperature, weather conditions, etc.
   4. Display Weather Data:
       * The weather data returned from Open-Meteo is processed and displayed on the app, providing the user with real-time weather information for the location they entered.
+* Example:
+  ```js
+  <!-- HTML Input for Zip Code -->
+<input type="text" id="zipCode" placeholder="Enter zip code">
+<button onclick="getWeatherFromZipCode()">Get Weather</button>
+<div id="weather-info"></div>
+
+<script>
+// Function to convert zip code to latitude/longitude and fetch weather
+function getWeatherFromZipCode() {
+    const zipCode = document.getElementById("zipCode").value;
+    
+    // Request coordinates from Nominatim API
+    fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zipCode}&country=USA&format=json`)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data[0]) {
+                const lat = data[0].lat;
+                const lon = data[0].lon;
+                
+                // Request weather data from Open-Meteo API
+                fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)
+                    .then(response => response.json())
+                    .then(weatherData => {
+                        // Display weather info
+                        const temperature = weatherData.current_weather.temperature;
+                        const condition = weatherData.current_weather.weathercode;
+                        document.getElementById("weather-info").innerHTML = `Temp: ${temperature}°C, Condition: ${condition}`;
+                    })
+                    .catch(error => {
+                        console.error("Error fetching weather data:", error);
+                    });
+            } else {
+                console.error("Zip code not found.");
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching coordinates:", error);
+        });
+}
+</script>
+   ```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
