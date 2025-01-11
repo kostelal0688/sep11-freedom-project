@@ -196,7 +196,23 @@ This feature will enable your app to provide users with weather data for their e
 * Integrated Zip Code Input:
    * Implemented a feature allowing users to input a zip code. The zip code is converted into latitude and longitude using the Nominatim API and passed into the Open-Meteo API to fetch the weather data.
     * [Nominatim API](https://nominatim.org/release-docs/3.6/develop/Postcodes/)
-    * Example API call: `https://nominatim.openstreetmap.org/search?postalcode=94040&country=USA&format=json` to retrieve coordinates.
+* Step-by-Step Process:
+  1. User Input (Zip Code): The user enters a zip code into a form field on the web page.
+  2. Convert Zip Code to Coordinates:
+     * The zip code is sent to the Nominatim API, which returns the corresponding latitude and longitude of that zip code. Nominatim is an open-source geocoding tool that converts addresses or postal codes to geographic coordinates.
+     * Example API call:
+`https://nominatim.openstreetmap.org/search?postalcode=94040&country=USA&format=json`
+     * This request returns a JSON response with information such as:
+```js
+ [
+  {
+    "lat": "37.3861",
+    "lon": "-122.0838",
+    "display_name": "Mountain View, California, USA"
+  }
+]
+```
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
