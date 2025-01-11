@@ -96,7 +96,7 @@ getWeather();
 ```
 In addition, I learned how to [add icons to represent each weather](https://github.com/open-meteo/open-meteo/issues/789) conditions. First, identify the weather types (e.g., sunny, rainy, cloudy) and find corresponding icons. For example, when the weather is sunny, you can show a sun icon. This approach makes the weather display more visually engaging and easier for users to understand. 
    * For example:
-   *  ```js
+     ```js
      <div id="weather">
      <img src="sunny-icon.png" alt="Sunny" id="weather-icon">
      <p>Weather: Sunny</p>
