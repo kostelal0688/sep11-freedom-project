@@ -1,5 +1,5 @@
-# Entry 3
-##### X/X/XX
+# Entry 3 (Learning Tool)
+##### 2/8/25
 
 Text
 
