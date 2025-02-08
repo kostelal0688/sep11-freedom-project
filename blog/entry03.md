@@ -6,6 +6,7 @@
   
 ##### Weather Icons Integration:
 * Integrated weather icons based on conditions fetched from the API. For instance, if the weather is "Clear", it shows a sun icon, "Rainy" shows a rain cloud, and so on.
+  
 Example:
 ```js
 if (weatherCondition === "Clear") {
