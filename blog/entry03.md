@@ -53,6 +53,11 @@ if (navigator.geolocation) {
 }
 ```
 
+### Next Steps
+Next, I want to improve error handling and user feedback in my app. This includes handling cases when the Open-Meteo API fails or when users deny location access. I’ll make sure the app shows helpful error messages so users know what went wrong.
+
+I also plan to explore more features of the Open-Meteo API, like adding hourly forecasts and extra weather data such as wind speed, humidity, and precipitation. Additionally, I want to add a 7-day forecast so users can see the upcoming weather. This will make the app more useful and informative.
+
 ## Engineering Design Process 
 
 ## Skills   
