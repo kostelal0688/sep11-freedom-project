@@ -70,4 +70,4 @@ I used problem decomposition to break my weather app project into smaller, manag
 I learned on my own by looking up tutorials, reading documentation, and experimenting with code. Whenever I didn’t know how to do something, I searched online for solutions or examples. For instance, when I started using the Open Meteo API, I read the official guide and checked out other people's examples to understand how it worked. I also tried things out by myself, changing parts of the code to see what would happen. If something didn’t work, I researched and tried again. This hands-on approach helped me learn quickly.
 
 ## Summary
-To conclude, I am really excited to continue working on this project. 
+Overall, I’m excited about the progress I’ve made and look forward to continue to work on the project.
