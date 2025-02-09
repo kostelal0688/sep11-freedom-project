@@ -59,8 +59,7 @@ Next, I want to improve error handling and user feedback in my app. This include
 I also plan to explore more features of the Open-Meteo API, like adding hourly forecasts and extra weather data such as wind speed, humidity, and precipitation. Additionally, I want to add a 7-day forecast so users can see the upcoming weather. This will make the app more useful and informative.
 
 ## Engineering Design Process 
-I’m currently in steps 2 and 3 of the engineering design process, where I’m diving into Open Meteo and experimenting with my code to better understand its features. I’ve been testing the addition of weather icons based on the data I get, which helps the app’s visual appeal. Another key update is the zip code feature I’ve implemented, where users can enter a zip code to retrieve weather information for that location, using the Nominatim API to convert the zip code into coordinates.
-Once I’ve gathered enough data, I’ll move on to step 4. In this phase, I’ll start planning the best solution for my app by selecting the most useful features, and determining the best way to display the weather information clearly for the user.
+I’m currently in steps 2 and 3 of the engineering design process, where I’m diving into Open Meteo and experimenting with my code to better understand its features. I’ve been testing the addition of weather icons based on the data I get, which helps the app’s visual appeal. Another key update is the zip code feature I’ve implemented, where users can enter a zip code to retrieve weather information for that location, using the Nominatim API to convert the zip code into coordinates. Once I’ve gathered enough data, I’ll move on to step 4. In this phase, I’ll start planning the best solution for my app by selecting the most useful features, and determining the best way to display the weather information clearly for the user.
 ## Skills   
 
 
