@@ -61,10 +61,13 @@ I also plan to explore more features of the Open-Meteo API, like adding hourly f
 ## Engineering Design Process 
 I’m currently in steps 2 and 3 of the engineering design process, where I’m diving into Open Meteo and experimenting with my code to better understand its features. I’ve been testing the addition of weather icons based on the data I get, which helps the app’s visual appeal. Another key update is the zip code feature I’ve implemented, where users can enter a zip code to retrieve weather information for that location, using the Nominatim API to convert the zip code into coordinates. Once I’ve gathered enough data, I’ll move on to step 4. In this phase, I’ll start planning the best solution for my app by selecting the most useful features, and determining the best way to display the weather information clearly for the user.
 ## Skills   
+Some skills that I’ve learned from working on this blog are **Problem decomposition** , and **How to learn**
 
+### Problem decomposition
+I used problem decomposition to break my weather app project into smaller, manageable tasks. Instead of doing everything at once, I focused on one feature at a time. First, I learned how to get weather data from the Open Meteo API. Then, I worked on displaying information like temperature and wind speed. After that, I added weather icons and a feature that allows users to enter a zip code for specific location data. By breaking the project into smaller steps, I could focus on solving one problem at a time and gradually build the app. This helped me stay organized and make steady progress.
+
+### How to learn
+I learned on my own by looking up tutorials, reading documentation, and experimenting with code. Whenever I didn’t know how to do something, I searched online for solutions or examples. For instance, when I started using the Open Meteo API, I read the official guide and checked out other people's examples to understand how it worked. I also tried things out by myself, changing parts of the code to see what would happen. If something didn’t work, I researched and tried again. This hands-on approach helped me learn quickly.
 
 ## Summary
-
-[Previous](entry02.md) | [Next](entry04.md)
-
-[Home](../README.md)
+To conclude, I am really excited to continue working on this project. 
