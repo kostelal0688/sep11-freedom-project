@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool: JSON APIS
+## Product: Dress based on Weather App
 
 ---
 
