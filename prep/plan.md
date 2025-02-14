@@ -7,8 +7,8 @@
 
 ## Timeline
 
-#### MVP
-- [ ] Create a simple webpage for user zip code (3/17 - 3/21)
+### MVP
+- [ ] ** Create a simple webpage for user zip code (3/17 - 3/21) **
   - [ ] Designing a form to accept user zip code meaning create something interactive where users can enter their zip code
       - [ ] Add placeholders to guide the user, like “Enter your zip code”.
        - [ ] Make a submit button for the user to submit their input labeled "Get Weather"
@@ -22,7 +22,7 @@
   - [ ]  Define clothing suggestions based on temperature (ex: "Hot: Wear shorts" or "Cold: Wear a jacket")
        - [ ]  Add image of clothing
        - [ ]  Use conditional statements to display the correct suggestion
-#### Beyond MVP
+### Beyond MVP
 
 - [ ] Add weather icons based on weather condition
   - [ ] Use weather condition data from the Open-Meteo API to display corresponding weather icons (ex: sun for clear, cloud for cloudy, etc.)
