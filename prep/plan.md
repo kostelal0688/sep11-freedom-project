@@ -8,7 +8,7 @@
 ## Timeline
 
 ### MVP
-- [ ] ** Create a simple webpage for user zip code (3/17 - 3/21) **
+** - [ ]  Create a simple webpage for user zip code (3/17 - 3/21) **
   - [ ] Designing a form to accept user zip code meaning create something interactive where users can enter their zip code
       - [ ] Add placeholders to guide the user, like “Enter your zip code”.
        - [ ] Make a submit button for the user to submit their input labeled "Get Weather"
