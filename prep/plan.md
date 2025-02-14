@@ -8,16 +8,16 @@
 ## Timeline
 
 #### MVP
-- [ ] Create a simple webpage for user input (zip code)
+- [ ] Create a simple webpage for user zip code (3/17 - 3/21)
   - [ ] Designing a form to accept user zip code meaning create something interactive where users can enter their zip code
        - [ ] Make a submit button for the user to submit their input
-- [ ] Display basic weather information
+- [ ] Display basic weather information (3/22 - 4/1)
   - [ ] Display temperature and weather condition (clear, rainy, etc.)
        - [ ] Format the weather data in a readable and user-friendly way
-- [ ]  Implement radio buttons for temperature units (Celsius/Fahrenheit)
+- [ ]  Implement radio buttons or a dropdown for temperature units Celsius/Fahrenheit (4/3 - 4/7)
   - [ ]  Add two radio buttons for the user to select temperature units
       - [ ]  Ensure that the temperature updates based on the selected unit
-- [ ]  Add basic weather-based clothing suggestions
+- [ ]  Add basic weather-based clothing suggestions (4/9 - 4/21)
   - [ ]  Define clothing suggestions based on temperature with images (e.g., "Hot: Wear shorts" or "Cold: Wear a jacket")
        - [ ]  Use conditional statements to display the correct suggestion
 #### Beyond MVP
