@@ -30,7 +30,7 @@
         - [ ] Automatically display weather for the user’s location without inputting a zip code
 - [ ] Implement 7-day weather forecast
   - [ ] Extend the Open-Meteo API request to include forecast data for the next 7 days
-  - [ ] Display the forecast for each day in the future
+        - [ ] Display the forecast for each day in the future
 
 
 <!-- EXAMPLE
