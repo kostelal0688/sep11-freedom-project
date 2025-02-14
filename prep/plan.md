@@ -18,7 +18,7 @@
   - [ ]  Add two radio buttons for the user to select temperature units
       - [ ]  Ensure that the temperature updates based on the selected unit
 - [ ]  Add basic weather-based clothing suggestions (4/9 - 4/21)
-  - [ ]  Define clothing suggestions based on temperature with images (e.g., "Hot: Wear shorts" or "Cold: Wear a jacket")
+  - [ ]  Define clothing suggestions based on temperature with images (ex: "Hot: Wear shorts" or "Cold: Wear a jacket")
        - [ ]  Use conditional statements to display the correct suggestion
 #### Beyond MVP
 
