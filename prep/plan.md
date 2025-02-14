@@ -8,13 +8,21 @@
 ## Timeline
 
 #### MVP
-
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
-
+- [ ] Create a simple webpage for user input (zip code)
+  - [ ] Designing a form to accept user zip code meaning create something interactive where users can enter their zip code
+  - [ ] Make a submit button for the user to submit their input
+- [ ] Display basic weather information
+  - [ ] Display temperature and weather condition (clear, rainy, etc.)
+  - [ ] Format the weather data in a readable and user-friendly way
+- [ ]  Implement radio buttons for temperature units (Celsius/Fahrenheit)
+  - [ ]  Add two radio buttons for the user to select temperature units
+  - [ ]  Ensure that the temperature updates based on the selected unit
+- [ ]  Add basic weather-based clothing suggestions
+  - [ ]  Define clothing suggestions based on temperature
+  - [ ]  Use conditional statements to display the correct suggestion
 #### Beyond MVP
 
-- [ ] Task
+- [ ] Display basic weather information
   - [ ] Subtask
 
 
