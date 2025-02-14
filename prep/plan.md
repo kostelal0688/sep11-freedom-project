@@ -18,12 +18,19 @@
   - [ ]  Add two radio buttons for the user to select temperature units
   - [ ]  Ensure that the temperature updates based on the selected unit
 - [ ]  Add basic weather-based clothing suggestions
-  - [ ]  Define clothing suggestions based on temperature
+  - [ ]  Define clothing suggestions based on temperature with images (e.g., "Hot: Wear shorts" or "Cold: Wear a jacket")
   - [ ]  Use conditional statements to display the correct suggestion
 #### Beyond MVP
 
-- [ ] Display basic weather information
-  - [ ] Subtask
+- [ ] Add weather icons based on weather condition
+  - [ ] Use weather condition data from the Open-Meteo API to display corresponding weather icons (ex: sun for clear, cloud for cloudy, etc.)
+  - [ ] Ensure icons update dynamically based on the condition
+- [ ] Implement geolocation feature
+  - [ ] Use the Geolocation API to fetch the user’s current location
+  - [ ] Automatically display weather for the user’s location without inputting a zip code
+- [ ] Implement 7-day weather forecast
+  - [ ] Extend the Open-Meteo API request to include forecast data for the next 7 days
+  - [ ] Display the forecast for each day in the future
 
 
 <!-- EXAMPLE
