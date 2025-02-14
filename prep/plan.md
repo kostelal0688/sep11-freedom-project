@@ -20,7 +20,7 @@
       - [ ]  When a radio button is clicked, it should toggle the temperature unit of the displayed data.
 - [ ]  Add basic weather-based clothing suggestions (4/9 - 4/21)
   - [ ]  Define clothing suggestions based on temperature (ex: "Hot: Wear shorts" or "Cold: Wear a jacket")
-   - [ ]  Add image of clothing
+       - [ ]  Add image of clothing
        - [ ]  Use conditional statements to display the correct suggestion
 #### Beyond MVP
 
