@@ -267,6 +267,7 @@ function getWeatherFromZipCode() {
 * I added some HTML and CSS
 * Created the placeholders to guide the user and made a submit button for the user to submit their input labeled "Get Weather"
 * Tried to make the button work, when clicked gives weather, however there was something was wrong in my code.
+* This was my code:
   ```js
    function getWeather() {
             var zip = document.getElementById("zip").value;
