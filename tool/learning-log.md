@@ -288,6 +288,7 @@ function getWeatherFromZipCode() {
         }
   ```
 * Learned how to use await fetch
+* To fetch data from a public API like Open-Meteo (for weather) or Nominatim (for geolocation based on zip codes), you can use JavaScript's fetch() method along with async and await.
 * `await fetch()` is part of JavaScript's async/await syntax, used to work with asynchronous code, especially when making network requests like fetching data from an API.
 * fetch():
     * fetch() is a built-in JavaScript function used to make HTTP requests to fetch data from an external resource (like an API, server, or file).
