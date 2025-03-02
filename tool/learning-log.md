@@ -262,6 +262,32 @@ function getWeatherFromZipCode() {
 }
 </script>
    ```
+### 3/24 - 3/2
+* Started working on my MVP
+* I added some HTML and CSS
+* Created the placeholders to guide the user and made a submit button for the user to submit their input labeled "Get Weather"
+* Tried to make the button work however there was something was wrong in my code.
+  ```js
+   function getWeather() {
+            var zip = document.getElementById("zip").value;
+
+            // Fetch the coordinates (latitude and longitude) for the zip code
+            var geoResponse = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&format=json`);
+            var geoData = await geoResponse.json();
+
+            if (geoData[0]) {
+                // Fetch the weather data using the coordinates
+                var weatherResponse = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${geoData[0].lat}&longitude=${geoData[0].lon}&current_weather=true`);
+                var weatherData = await weatherResponse.json();
+                
+                // Display the temperature in the result div
+                document.getElementById("result").innerText = `Temperature: ${weatherData.current_weather.temperature}°C`;
+            } else {
+                document.getElementById("result").innerText = "Invalid zip code.";
+            }
+        }
+  ```
+  
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
