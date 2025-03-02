@@ -295,6 +295,7 @@ function getWeatherFromZipCode() {
 await:
     * await is used inside an async function. It pauses the execution of the function until the promise is resolved, which makes the asynchronous code look and behave more like synchronous code.
     * When you use await, JavaScript waits for the promise to resolve and then moves on to the next line of code.
+ * In my example, when the user enters a zip code and clicks "Get Weather", the getWeather() function is called. The function first fetches the coordinates (latitude and longitude) of the zip code by calling the Nominatim API with the zip code.
 * Next Steps:
      * Find my error and display basic weather information 
   
