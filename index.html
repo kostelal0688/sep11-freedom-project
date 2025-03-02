@@ -9,21 +9,67 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <style>
             /* CSS */
-            
+            body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin: 0;
+            flex-direction: column;
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #737CCF; /* Purple color for the title */
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px; /* Rounded corners */
+            border: 2px solid #737CCF; /* Purple border */
+            font-size: 1.2em;
+            outline: none;
+        }
+
+        button {
+            background-color: #737CCF; /* Purple background */
+            color: white;
+        }
+
+        button:active {
+            background-color: #BBC4EB; /* Light purple when clicked */
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff1493; /* Pink color for the result */
+
         </style>
-        
+
         <title>Title</title>
     </head>
     <body>
         <!-- HTML -->
-        
-        
+        <h1>Weather App</h1>
+
+        <input id="zip" placeholder="Enter zip code">
+
+        <button onclick="getWeather()">Get Weather</button>
+
+        <div id="result"></div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="script.js"></script> -->
         <script>
             // JS
-            
-            
+
+
         </script>
     </body>
 </html>
