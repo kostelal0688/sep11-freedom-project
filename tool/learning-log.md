@@ -287,6 +287,13 @@ function getWeatherFromZipCode() {
             }
         }
   ```
+* Learned how to use await fetch
+* `await fetch()` is part of JavaScript's async/await syntax, used to work with asynchronous code, especially when making network requests like fetching data from an API.
+* fetch():
+    * fetch() is a built-in JavaScript function used to make HTTP requests to fetch data from an external resource (like an API, server, or file).
+await:
+    * await is used inside an async function. It pauses the execution of the function until the promise is resolved, which makes the asynchronous code look and behave more like synchronous code.
+    * When you use await, JavaScript waits for the promise to resolve and then moves on to the next line of code.
   
 <!--
 * Links you used today (websites, videos, etc)
