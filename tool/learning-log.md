@@ -262,7 +262,7 @@ function getWeatherFromZipCode() {
 }
 </script>
    ```
-### 3/24 - 3/2
+### 2/24 - 3/2
 * Started working on my MVP
 * I added some HTML and CSS
 * Created the placeholders to guide the user and made a submit button for the user to submit their input labeled "Get Weather"
@@ -295,6 +295,8 @@ function getWeatherFromZipCode() {
 await:
     * await is used inside an async function. It pauses the execution of the function until the promise is resolved, which makes the asynchronous code look and behave more like synchronous code.
     * When you use await, JavaScript waits for the promise to resolve and then moves on to the next line of code.
+* Next Steps:
+     * Find my error and display basic weather information 
   
 <!--
 * Links you used today (websites, videos, etc)
