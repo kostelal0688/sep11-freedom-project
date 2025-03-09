@@ -332,7 +332,11 @@ await:
         resultDiv.innerText = "Error fetching weather data.";
     }
 }
-
+* I learned that my second try work because it has the async keyword, which allows the use of await to pause the function until data is received. The second version doesn't work because it is missing the async keyword, and await can only be used inside async functions.
+* In my first try, the zip code wasn't trimmed, meaning extra spaces could cause problems. I added .trim() to fix this.
+*  The first try didn’t handle errors like failed requests. I added a try-catch block to catch errors and show a message instead of breaking the code.
+*  Next Steps:
+     * Add what to wear based on the temperature.
 ```
   
 <!--
