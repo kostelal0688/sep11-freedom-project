@@ -303,32 +303,25 @@ await:
 * I was able to get the temperature of you button clicked.
 * This is my new code:
 ```js
-    async function getWeather() {
-        var zip = document.getElementById("zip").value.trim();
-        var resultDiv = document.getElementById("result");
-        resultDiv.innerText = "Fetching data...";
-    
-        try {
-            var geoResponse = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`);
-            var geoData = await geoResponse.json();
-    
-            if (!geoData.length) {
-                resultDiv.innerText = "Invalid zip code.";
-                return;
+      async function getWeather() {
+            var zip = document.getElementById("zip").value.trim();
+            var resultDiv = document.getElementById("result");
+            resultDiv.innerText = "Fetching data...";
+
+            try {
+                var geoData = await (await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`)).json();
+                if (!geoData.length) return (resultDiv.innerText = "Invalid zip code.");
+
+                var { lat, lon } = geoData[0];
+                var weatherData = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)).json();
+
+                resultDiv.innerText = weatherData.current_weather
+                    ? `Temperature: ${weatherData.current_weather.temperature}°C`
+                    : "Weather data not available.";
+            } catch {
+                resultDiv.innerText = "Error fetching weather data.";
             }
-    
-            var { lat, lon } = geoData[0];
-            var weatherResponse = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
-            var weatherData = await weatherResponse.json();
-    
-            resultDiv.innerText = weatherData.current_weather
-                ? `Temperature: ${weatherData.current_weather.temperature}°C`
-                : "Weather data not available.";
-        } catch (error) {
-            console.error("Error:", error);
-            resultDiv.innerText = "Error fetching weather data.";
         }
-    }
 ```
   
 <!--
