@@ -337,6 +337,9 @@ await:
 * I learned that my second try work because it has the async keyword, which allows the use of await to pause the function until data is received. The second version doesn't work because it is missing the async keyword, and await can only be used inside async functions.
 * In my first try, the zip code wasn't trimmed, meaning extra spaces could cause problems. I added .trim() to fix this.
 *  The first try didn’t handle errors like failed requests. I added a try-catch block to catch errors and show a message instead of breaking the code.
+*  `async` and `await`: I now understand that await only works inside an async function. Without async, the function can't use await to pause and wait for data.
+*  I learned that using `.trim()` on input like the zip code is important to remove extra spaces that could cause errors in API requests.
+*  Error Handling: You learned how to handle errors with a try-catch block, which prevents your code from breaking and allows you to show user-friendly error messages when something goes wrong like if the API request fails.
 *  Next Steps:
      * Add what to wear based on the temperature.
 
