@@ -1,7 +1,7 @@
 # Entry 4 (Start the MVP)
 ##### 3/10/25
 ## Content
- In the past few weeks, I’ve been learning how to use the Open-Meteo API to get weather data for my app. I’ve also been learning how to handle requests in JavaScript using async and await, which helps get the data from the API without freezing the page. To help with this, I used resources like the [https://open-meteo.com/en/doc](Open-Meteo API Documentation)
+ In the past few weeks, I’ve been learning how to use the Open-Meteo API to get weather data for my app. I’ve also been learning how to handle requests in JavaScript using async and await, which helps get the data from the API without freezing the page. To help with this, I used resources like the (Open-Meteo API Documentation)[https://open-meteo.com/en/doc]
 
 ### Progress Made:
 
