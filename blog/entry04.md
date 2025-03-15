@@ -61,9 +61,8 @@ I found that I needed to use async and await properly. I also realized that I wa
 }
 ```
 
-
-
 ## Engineering Design Process 
+I'm currently in steps 5 and 6 of the engineering design process, where I'm creating and testing my weather app prototype. I've been focusing on making sure the zip code feature works well, allowing users to input a zip code and receive accurate weather information. I’ve also been testing how the weather data is displayed to make sure it’s clear and easy to understand. Right now, I’m making sure everything works smoothly and will adjust any issues I find during testing. Once I’m confident in the prototype, I’ll will add conditionals to show what to wear based on the weather data.
 
 ## Skills   
 Some skills that I’ve learned from working on this blog are ** ** , and ** **
