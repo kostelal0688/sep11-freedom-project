@@ -8,6 +8,7 @@
 At first, I added some HTML and CSS to make the page look nice and easy to use. I created a "Get Weather" button and tried to make it fetch the weather when clicked. My idea was that when the user inputs their zip code and clicks the button, they would see the weather for their location. However, my first attempt didn’t work as expected because my code wasn’t handling the API requests properly. The button didn’t trigger the fetch correctly, and the weather data wasn’t displaying on the page.
 
 I realized the issue was that I wasn’t using async and await properly to handle the API calls, which caused some delays and errors. I also needed to trim the zip code input to remove unnecessary spaces, and I didn’t have error handling for when the fetch failed. Once I fixed these issues, the button started working and successfully fetched the weather data for the zip code entered.
+
 * Here’s the first version of my code:
 
 ```js
