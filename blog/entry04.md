@@ -8,7 +8,7 @@
 At first, I added some HTML and CSS to make the page look nice. I created a "Get Weather" button and tried to make it fetch the weather when clicked. But my first attempt didn’t work as expected because my code wasn’t handling the API requests properly.
  * Here’s the first version of my code:
 ```js
- async function getWeather() {
+ function getWeather() {
     var zip = document.getElementById("zip").value;
     var geoResponse = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&format=json`);
     var geoData = await geoResponse.json();
@@ -26,6 +26,37 @@ At first, I added some HTML and CSS to make the page look nice. I created a "Get
 I found that I needed to use async and await properly. I also realized that I wasn’t trimming the zip code, so spaces might mess things up. After fixing these issues, I also added a try-catch block to handle errors, like when the API can’t fetch data.
 
     * Here’s the updated code that works:
+```js
+     async function getWeather() {
+    // Get the zip code entered by the user
+    var zip = document.getElementById("zip").value.trim();
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerText = "Fetching data..."; // Show fetching message
+
+    try {
+        // Fetch geolocation data based on the zip code
+        var geoData = await (await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`)).json();
+
+        // If no data found for the zip code, show an error message
+        if (!geoData.length) return (resultDiv.innerText = "Invalid zip code.");
+
+        // Get latitude and longitude from geolocation data
+        var lat = geoData[0].lat;
+        var lon = geoData[0].lon;
+
+        // Fetch weather data using the latitude and longitude
+        var weatherData = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)).json();
+
+        // Display weather data or show an error message if not available
+        resultDiv.innerText = weatherData.current_weather 
+            ? `Temperature: ${weatherData.current_weather.temperature}°C` 
+            : "Weather data not available.";
+    } catch {
+        // If an error occurs, show an error message
+        resultDiv.innerText = "Error fetching weather data.";
+    }
+}
+```
 
 
 
