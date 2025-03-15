@@ -31,7 +31,6 @@ I found that I needed to use async and await properly. I also realized that I wa
 
     * Here’s the updated code that works:
 
-    
 ```js
      async function getWeather() {
     // Get the zip code entered by the user
@@ -62,7 +61,7 @@ I found that I needed to use async and await properly. I also realized that I wa
         resultDiv.innerText = "Error fetching weather data.";
     }
 }
- ```
+```
 
 
 
