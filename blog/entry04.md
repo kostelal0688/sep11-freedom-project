@@ -9,8 +9,8 @@ At first, I added some HTML and CSS to make the page look nice and easy to use. 
 
 I realized the issue was that I wasn’t using async and await properly to handle the API calls, which caused some delays and errors. I also needed to trim the zip code input to remove unnecessary spaces, and I didn’t have error handling for when the fetch failed. Once I fixed these issues, the button started working and successfully fetched the weather data for the zip code entered.
 
-
  * Here’s the first version of my code:
+
 ```js
  function getWeather() {
     var zip = document.getElementById("zip").value;
