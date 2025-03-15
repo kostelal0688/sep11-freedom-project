@@ -71,7 +71,7 @@ Some skills that I’ve learned from working on this blog are **Embracing failur
 Instead of getting upset when things don’t work, I’ve learned to see mistakes as a chance to learn. For example, when the zip code feature wasn’t giving the right data, I didn’t get frustrated. I just looked at the problem, researched, and fixed the issue. Embracing failure helps me stay positive and keep going.
 
 ### Debugging
-Debugging has been a big part of building my app. When I ran into errors, I learned to read the error messages and figure out what went wrong. Debugging taught me to stay patient and keep trying until I find the solution.
+Debugging has been a big part of building my app. When I ran into errors, I learned to read the error messages and figure out what went wrong. For example, when I was trying to get weather data from the Open-Meteo API, I kept getting an error about missing parameters. After reading the error message carefully, I realized I hadn’t included the right variables in the request URL. Debugging taught me to stay patient and keep trying until I find the solution.
 ## Summary
 
 
