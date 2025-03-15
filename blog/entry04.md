@@ -28,8 +28,8 @@ I realized the issue was that I wasn’t using async and await properly to handl
 ### What I Learned:
 
 I found that I needed to use async and await properly. I also realized that I wasn’t trimming the zip code, so spaces might mess things up. After fixing these issues, I also added a try-catch block to handle errors, like when the API can’t fetch data.
-
     * Here’s the updated code that works:
+
     
 ```js
      async function getWeather() {
