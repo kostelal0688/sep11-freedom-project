@@ -73,6 +73,7 @@ Instead of getting upset when things don’t work, I’ve learned to see mistake
 ### Debugging
 Debugging has been a big part of building my app. When I ran into errors, I learned to read the error messages and figure out what went wrong. For example, when I was trying to get weather data from the Open-Meteo API, I kept getting an error about missing parameters. After reading the error message carefully, I realized I hadn’t included the right variables in the request URL. Debugging taught me to stay patient and keep trying until I find the solution.
 ## Summary
+Overall, I’m excited about the progress I’ve made and look forward to continue to work on the project. My next steps is to add what to wear based on weather data.
 
 
 [Previous](entry03.md) | [Next](entry05.md)
