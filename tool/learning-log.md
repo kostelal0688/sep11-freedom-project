@@ -342,6 +342,7 @@ await:
 *  Error Handling: You learned how to handle errors with a try-catch block, which prevents your code from breaking and allows you to show user-friendly error messages when something goes wrong like if the API request fails.
 *  Next Steps:
      * Add what to wear based on the temperature.
+  ### 3/17-3/23
 
   
 <!--
