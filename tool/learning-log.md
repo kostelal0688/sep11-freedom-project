@@ -343,6 +343,47 @@ await:
 *  Next Steps:
      * Add what to wear based on the temperature.
   ### 3/17-3/23
+  * Learned more about how to add clothing suggestions based on weather.
+  * This is what I tried while learning.
+  * I wanted to show images that represent different weather conditions (sunny, rainy, cloudy, etc.). To do this, I mapped weather conditions from the API response to corresponding image files.
+```js
+    const weatherImages = {
+        Clear: "sunny.jpg",
+        Rainy: "rainy.jpg",
+        Cloudy: "cloudy.jpg",
+        Snowy: "snowy.jpg"
+    };
+    
+    function updateWeatherImage(weatherCondition) {
+        const weatherImage = document.getElementById("weather-image");
+        weatherImage.src = weatherImages[weatherCondition] || "default.jpg"; 
+    }
+```
+* When the API returns a weather condition, the function updates the src attribute of the <img> tag in the HTML.
+* If the weather condition is not found in the weatherImages object, a default image is shown.
+* To make the app more engaging, I also added images for clothing suggestions based on the temperature.
+```js
+function suggestClothing(temp) {
+    let suggestion = "";
+    let imageSrc = "";
+
+    if (temp >= 25) {
+        suggestion = "Wear light clothes like a t-shirt and shorts.";
+        imageSrc = "summer-outfit.jpg";
+    } else if (temp >= 15) {
+        suggestion = "Wear a light jacket or hoodie.";
+        imageSrc = "fall-outfit.jpg";
+    } else {
+        suggestion = "Wear a heavy coat, scarf, and gloves.";
+        imageSrc = "winter-outfit.jpg";
+    }
+
+    document.getElementById("clothing-suggestion").innerText = suggestion;
+    document.getElementById("clothing-image").src = imageSrc;
+}
+'''
+* Depending on the temperature, the function selects an appropriate outfit description and an image.
+* The innerText of an HTML element is updated with the suggestion.
 
   
 <!--
