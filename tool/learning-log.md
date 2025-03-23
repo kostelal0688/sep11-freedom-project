@@ -384,7 +384,8 @@ function suggestClothing(temp) {
 ```
 * Depending on the temperature, the function selects an appropriate outfit description and an image.
 * The innerText of an HTML element is updated with the suggestion.
-
+ *  Next Steps:
+     * Add what to practiced to my MVP
   
 <!--
 * Links you used today (websites, videos, etc)
