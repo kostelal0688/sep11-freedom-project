@@ -381,7 +381,7 @@ function suggestClothing(temp) {
     document.getElementById("clothing-suggestion").innerText = suggestion;
     document.getElementById("clothing-image").src = imageSrc;
 }
-'''
+```
 * Depending on the temperature, the function selects an appropriate outfit description and an image.
 * The innerText of an HTML element is updated with the suggestion.
 
