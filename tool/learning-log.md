@@ -387,6 +387,8 @@ function suggestClothing(temp) {
  *  Next Steps:
      * Add what to practiced to my MVP
   
+### 3/24 - 3/31
+  
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
