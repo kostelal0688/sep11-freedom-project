@@ -394,8 +394,8 @@ function suggestClothing(temp) {
    
   ```html
     <select id="unit">
-    <option value="C">Celsius</option>
-    <option value="F">Fahrenheit</option>
+       <option value="C">Celsius</option>
+       <option value="F">Fahrenheit</option>
     </select>
   ```
   
