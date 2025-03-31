@@ -432,19 +432,14 @@ function suggestClothing(temp) {
     var tempC = weatherData.current_weather.temperature;
 ```
 
-  * Convert to Fahrenheit if the user selected "F".
+  * Convert to Fahrenheit if the user selected "F" + Display the temperature based on the selected unit.
     
      ```js
     var tempF = (tempC * 9/5) + 32;
-```
-
- * Display the temperature based on the selected unit.
-    
-```js
     resultDiv.innerText = unit === "C" 
     ? `Temperature: ${tempC.toFixed(1)}°C` 
     : `Temperature: ${tempF.toFixed(1)}°F`;
-```
+  ```
 
 
 
