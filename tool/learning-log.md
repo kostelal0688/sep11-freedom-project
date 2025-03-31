@@ -442,10 +442,10 @@ function suggestClothing(temp) {
      ```
 
 
-
 * If unit is "C", it displays temperature in Celsius.
 * If unit is "F", it converts to Fahrenheit and then displays it.
-
+ *  Next Steps:
+     * Add what the dropdown to my app
 
 
  
