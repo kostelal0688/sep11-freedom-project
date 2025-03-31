@@ -389,7 +389,6 @@ function suggestClothing(temp) {
   
 ### 3/24 - 3/31
 * I learned how to allow users to switch between Celsius and Fahrenheit
-* You need a way for the user to select whether they want Celsius (°C) or Fahrenheit (°F). In HTML, you can use a <select> element with <option> choices.
 1.   Add a Dropdown Menu
 
   ```html
@@ -407,4 +406,11 @@ function suggestClothing(temp) {
     * Read the selected unit from the dropdown.
     * Convert the temperature if Fahrenheit is chosen.
     * Display the correct value based on the user's selection.
-
+Steps Inside getWeather()
+  * Get user input (zip code and selected unit).
+ 
+```js
+    var zip = document.getElementById("zip").value.trim();
+    var unit = document.getElementById("unit").value;
+```
+ 
