@@ -406,11 +406,31 @@ function suggestClothing(temp) {
     * Read the selected unit from the dropdown.
     * Convert the temperature if Fahrenheit is chosen.
     * Display the correct value based on the user's selection.
-Steps Inside getWeather()
+* Steps Inside getWeather()
   * Get user input (zip code and selected unit).
  
 ```js
     var zip = document.getElementById("zip").value.trim();
     var unit = document.getElementById("unit").value;
 ```
+
+  * Fetch geolocation data (latitude & longitude) using the zip code.
+ 
+```js
+   var geoData = await (await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`)).json();
+```
+
+  * Fetch weather data using the coordinates.
+
+```js
+   var weatherData = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)).json();
+```
+
+  * Extract the temperature (which is initially in Celsius).
+    
+  ```js
+    var tempC = weatherData.current_weather.temperature;
+```
+    
+
  
