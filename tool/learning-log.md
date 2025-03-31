@@ -389,7 +389,7 @@ function suggestClothing(temp) {
   
 ### 3/24 - 3/31
 * I learned how to allow users to switch between Celsius and Fahrenheit
-*  Add a Dropdown Menu: You need a way for the user to select whether they want Celsius (°C) or Fahrenheit (°F). In HTML, you can use a <select> element with <option> choices.
+*  Add a Dropdown Menu
 
   
   ```html
