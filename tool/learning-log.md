@@ -399,7 +399,7 @@ function suggestClothing(temp) {
   ```
 
 * The id="unit" allows JavaScript to reference this dropdown.
-* The value="C" and value="F" help determine the selected unit.
+* The value="C" and value="F" help determine the selected unit. 
 
 2. Modify the JavaScript Function
 * The getWeather() function should now:
