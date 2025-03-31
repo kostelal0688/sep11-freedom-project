@@ -396,8 +396,9 @@ function suggestClothing(temp) {
        <option value="C">Celsius</option>
        <option value="F">Fahrenheit</option>
     </select>
-   ```
+  ``` 
 
+     
       * You need a way for the user to select whether they want Celsius (°C) or Fahrenheit (°F). In HTML, you can use a <select> element with <option> choices.
    
  
