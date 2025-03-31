@@ -440,11 +440,12 @@ function suggestClothing(temp) {
 
  * Display the temperature based on the selected unit.
     
-     ```js
-   resultDiv.innerText = unit === "C" 
+```js
+    resultDiv.innerText = unit === "C" 
     ? `Temperature: ${tempC.toFixed(1)}°C` 
     : `Temperature: ${tempF.toFixed(1)}°F`;
-  ```
+```
+
 
 
 * If unit is "C", it displays temperature in Celsius.
