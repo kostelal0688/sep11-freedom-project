@@ -262,10 +262,190 @@ function getWeatherFromZipCode() {
 }
 </script>
    ```
-<!--
-* Links you used today (websites, videos, etc)
-* Things you tried, progress you made, etc
-* Challenges, a-ha moments, etc
-* Questions you still have
-* What you're going to try next
--->
+### 2/24 - 3/2
+* Started working on my MVP
+* I added some HTML and CSS
+* Created the placeholders to guide the user and made a submit button for the user to submit their input labeled "Get Weather"
+* Tried to make the button work, when clicked gives weather, however there was something was wrong in my code.
+* This was my code:
+  ```js
+   function getWeather() {
+            var zip = document.getElementById("zip").value;
+
+            // Fetch the coordinates (latitude and longitude) for the zip code
+            var geoResponse = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&format=json`);
+            var geoData = await geoResponse.json();
+
+            if (geoData[0]) {
+                // Fetch the weather data using the coordinates
+                var weatherResponse = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${geoData[0].lat}&longitude=${geoData[0].lon}&current_weather=true`);
+                var weatherData = await weatherResponse.json();
+                
+                // Display the temperature in the result div
+                document.getElementById("result").innerText = `Temperature: ${weatherData.current_weather.temperature}°C`;
+            } else {
+                document.getElementById("result").innerText = "Invalid zip code.";
+            }
+        }
+  ```
+* Learned how to use await fetch
+* To fetch data from a public API like Open-Meteo (for weather) or Nominatim (for geolocation based on zip codes), you can use JavaScript's fetch() method along with async and await.
+* `await fetch()` is part of JavaScript's async/await syntax, used to work with asynchronous code, especially when making network requests like fetching data from an API.
+* fetch():
+    * fetch() is a built-in JavaScript function used to make HTTP requests to fetch data from an external resource (like an API, server, or file).
+await:
+    * await is used inside an async function. It pauses the execution of the function until the promise is resolved, which makes the asynchronous code look and behave more like synchronous code.
+    * When you use await, JavaScript waits for the promise to resolve and then moves on to the next line of code.
+ * In my example, when the user enters a zip code and clicks "Get Weather", the getWeather() function is called. The function first fetches the coordinates (latitude and longitude) of the zip code by calling the Nominatim API with the zip code.
+* Next Steps:
+     * Find my error and display basic weather information
+### 3/3 - 3/9
+* I was able to get the temperature of you button clicked.
+* This is my new code:
+```js
+     async function getWeather() {
+    // Get the zip code entered by the user
+    var zip = document.getElementById("zip").value.trim();
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerText = "Fetching data..."; // Show fetching message
+
+    try {
+        // Fetch geolocation data based on the zip code
+        var geoData = await (await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`)).json();
+
+        // If no data found for the zip code, show an error message
+        if (!geoData.length) return (resultDiv.innerText = "Invalid zip code.");
+
+        // Get latitude and longitude from geolocation data
+        var lat = geoData[0].lat;
+        var lon = geoData[0].lon;
+
+        // Fetch weather data using the latitude and longitude
+        var weatherData = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)).json();
+
+        // Display weather data or show an error message if not available
+        resultDiv.innerText = weatherData.current_weather 
+            ? `Temperature: ${weatherData.current_weather.temperature}°C` 
+            : "Weather data not available.";
+    } catch {
+        // If an error occurs, show an error message
+        resultDiv.innerText = "Error fetching weather data.";
+    }
+}
+```
+
+* I learned that my second try work because it has the async keyword, which allows the use of await to pause the function until data is received. The second version doesn't work because it is missing the async keyword, and await can only be used inside async functions.
+* In my first try, the zip code wasn't trimmed, meaning extra spaces could cause problems. I added .trim() to fix this.
+*  The first try didn’t handle errors like failed requests. I added a try-catch block to catch errors and show a message instead of breaking the code.
+*  `async` and `await`: I now understand that await only works inside an async function. Without async, the function can't use await to pause and wait for data.
+*  I learned that using `.trim()` on input like the zip code is important to remove extra spaces that could cause errors in API requests.
+*  Error Handling: You learned how to handle errors with a try-catch block, which prevents your code from breaking and allows you to show user-friendly error messages when something goes wrong like if the API request fails.
+*  Next Steps:
+     * Add what to wear based on the temperature.
+  ### 3/17-3/23
+  * Learned more about how to add clothing suggestions based on weather.
+  * This is what I tried while learning.
+  * I wanted to show images that represent different weather conditions (sunny, rainy, cloudy, etc.). To do this, I mapped weather conditions from the API response to corresponding image files.
+```js
+    const weatherImages = {
+        Clear: "sunny.jpg",
+        Rainy: "rainy.jpg",
+        Cloudy: "cloudy.jpg",
+        Snowy: "snowy.jpg"
+    };
+    
+    function updateWeatherImage(weatherCondition) {
+        const weatherImage = document.getElementById("weather-image");
+        weatherImage.src = weatherImages[weatherCondition] || "default.jpg"; 
+    }
+```
+* When the API returns a weather condition, the function updates the src attribute of the <img> tag in the HTML.
+* If the weather condition is not found in the weatherImages object, a default image is shown.
+* To make the app more engaging, I also added images for clothing suggestions based on the temperature.
+```js
+function suggestClothing(temp) {
+    let suggestion = "";
+    let imageSrc = "";
+
+    if (temp >= 25) {
+        suggestion = "Wear light clothes like a t-shirt and shorts.";
+        imageSrc = "summer-outfit.jpg";
+    } else if (temp >= 15) {
+        suggestion = "Wear a light jacket or hoodie.";
+        imageSrc = "fall-outfit.jpg";
+    } else {
+        suggestion = "Wear a heavy coat, scarf, and gloves.";
+        imageSrc = "winter-outfit.jpg";
+    }
+
+    document.getElementById("clothing-suggestion").innerText = suggestion;
+    document.getElementById("clothing-image").src = imageSrc;
+}
+```
+* Depending on the temperature, the function selects an appropriate outfit description and an image.
+* The innerText of an HTML element is updated with the suggestion.
+ *  Next Steps:
+     * Add what to practiced to my MVP
+  
+### 3/24 - 3/31
+* I learned how to allow users to switch between Celsius and Fahrenheit
+1.   Add a Dropdown Menu
+
+  ```html
+   <select id="unit">
+       <option value="C">Celsius</option>
+       <option value="F">Fahrenheit</option>
+    </select>
+  ```
+
+* The id="unit" allows JavaScript to reference this dropdown.
+* The value="C" and value="F" help determine the selected unit. 
+
+2. Modify the JavaScript Function
+* The getWeather() function should now:
+    * Read the selected unit from the dropdown.
+    * Convert the temperature if Fahrenheit is chosen.
+    * Display the correct value based on the user's selection.
+* Steps Inside getWeather()
+  * Get user input (zip code and selected unit).
+ 
+```js
+    var zip = document.getElementById("zip").value.trim();
+    var unit = document.getElementById("unit").value;
+```
+
+  * Fetch geolocation data (latitude & longitude) using the zip code.
+ 
+```js
+   var geoData = await (await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zip}&country=us&format=json`)).json();
+```
+
+  * Fetch weather data using the coordinates.
+
+```js
+   var weatherData = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)).json();
+```
+
+  * Extract the temperature (which is initially in Celsius).
+    
+  ```js
+    var tempC = weatherData.current_weather.temperature;
+```
+
+  * Convert to Fahrenheit if the user selected "F" + Display the temperature based on the selected unit.
+    
+     ```js
+        var tempF = (tempC * 9/5) + 32;
+        resultDiv.innerText = unit === "C" 
+        ? `Temperature: ${tempC.toFixed(1)}°C` 
+        : `Temperature: ${tempF.toFixed(1)}°F`;
+     ```
+
+
+* If unit is "C", it displays temperature in Celsius.
+* If unit is "F", it converts to Fahrenheit and then displays it.
+ *  Next Steps:
+     * Add what the dropdown to my app
+
+
+ 
