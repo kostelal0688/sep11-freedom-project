@@ -12,7 +12,7 @@
             body {
             margin: 0;
             padding: 0;
-            background: url('background.png') no-repeat center center fixed;
+            background: url('background-img.png') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
@@ -33,6 +33,12 @@
         input {
             margin-bottom: 10px;
         }
+        #result {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
 
 
         </style>
@@ -53,11 +59,71 @@
         </div>
 
 
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- <script src="script.js"></script> -->
         <script>
             // JS
+          // Function that runs when you click the button
+        function getWeather() {
 
+        // Get the zip code the user typed in
+        var zip = document.getElementById("zip").value;
+
+        // Get the result div where it'll show the weather and advice
+        var result = document.getElementById("result");
+
+        // Show a Loading message while fetch the data
+        result.innerText = "Loading...";
+
+        // Fetch latitude and longitude using the zip code from Nominatim API
+        fetch("https://nominatim.openstreetmap.org/search?postalcode=" + zip + "&country=us&format=json")
+            .then(function(response) {
+                // Convert the response to JSON so JavaScript can use it
+                return response.json();
+            })
+            .then(function(data) {
+                // If no location is found, tell the user the zip code is invalid
+                if (data.length === 0) {
+                    result.innerText = "Invalid zip code.";
+                    return; // Stop the function
+                }
+
+                // Get latitude and longitude from the first search result
+                var lat = data[0].lat;
+                var lon = data[0].lon;
+
+                // Use Open-Meteo API to fetch current weather data for the location
+                fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + "&current_weather=true")
+                    .then(function(response) {
+                        // Convert weather response to JSON
+                        return response.json();
+                    })
+                    .then(function(weatherData) {
+                        // Get the current temperature from the data
+                        var temp = weatherData.current_weather.temperature;
+
+                        // Give clothing advice based on the temperature
+                        var advice = "";
+                        if (temp <= 5) {
+                            advice = "It's freezing! Wear a heavy coat/jacket, scarf, gloves, and boots.🥶";
+                        } else if (temp > 5 && temp <= 15) {
+                            advice = "It's chilly. Wear a jacket or sweater.🧥";
+                        } else if (temp > 15 && temp <= 25) {
+                            advice = "It's warm. A t-shirt and light jacket will do.👚";
+                        } else {
+                            advice = "It's hot! Wear shorts and a t-shirt.☀️";
+                        }
+
+                        // Show the temperature and the clothing advice in the result area
+                        result.innerText = "Temperature: " + temp + "°C\n" + advice;
+                    });
+                })
+            .catch(function(error) {
+                // If something goes wrong show an error message
+                result.innerText = "Something went wrong.";
+            });
+        }
 
         </script>
     </body>
