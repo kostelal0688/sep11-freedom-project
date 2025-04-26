@@ -5,6 +5,7 @@ Over the past few weeks, I continued learning how to use the Open-Meteo API to g
 
  ### How I finished my MVP:
 In the beginning, I was very confused. I already had some code written, but I didn’t like how it was going, so I deleted everything. I wasn’t sure where to start, and I realized I needed a better plan. I took out a piece of paper and drew a wireframe of my project, which helped me a lot. Even though I didn’t follow the plan exactly, it gave me a clear starting point. Below is a picture of my plan:
+   ![Plan of MYP](plan.png)
 
 
  ## Engineering Design Process 
