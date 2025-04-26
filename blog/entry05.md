@@ -4,6 +4,7 @@
 Over the past few weeks, I continued learning how to use the Open-Meteo API to get weather data for my app while also finishing my MVP. To do this, I used both the [Nominatim API](https://nominatim.org/release-docs/3.6/develop/Postcodes/), and [Open-Meteo APi](https://open-meteo.com/en/docs?latitude=40.7143&longitude=-74.006&current=temperature_2m&forecast_days=1) to improve my understanding and build new features.
 
  ### How I finished my MVP:
+In the beginning, I was very confused. I already had some code written, but I didn’t like how it was going, so I deleted everything. I wasn’t sure where to start, and I realized I needed a better plan. I took out a piece of paper and drew a wireframe of my project, which helped me a lot. Even though I didn’t follow the plan exactly, it gave me a clear starting point. Below is a picture of my plan:
 
 
  ## Engineering Design Process 
