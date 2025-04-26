@@ -6,6 +6,42 @@ Over the past few weeks, I continued learning how to use the Open-Meteo API to g
  ### How I finished my MVP:
 In the beginning, I was very confused. I already had some code written, but I didn’t like how it was going, so I deleted everything. I wasn’t sure where to start, and I realized I needed a better plan. I took out a piece of paper and drew a wireframe of my project, which helped me a lot. Even though I didn’t follow the plan exactly, it gave me a clear starting point. Below is a picture of my plan:
    ![Plan of MYP](plan.png)
+Then I made a background in Canva and add some HTML and JavaScript. In JavaSCript I 
+
+```js
+ function getWeather() {
+        var zip = document.getElementById("zip").value;
+        var result = document.getElementById("result");
+        result.innerText = "Loading...";
+
+        // Fetch latitude and longitude using the zip code from Nominatim API
+        fetch("https://nominatim.openstreetmap.org/search?postalcode=" + zip + "&country=us&format=json")
+            .then(function(response) {
+                // Convert the response to JSON so JavaScript can use it
+                return response.json();
+            })
+            .then(function(data) {
+                // If no location is found, tell the user the zip code is invalid
+                if (data.length === 0) {
+                    result.innerText = "Invalid zip code.";
+                    return; // Stop the function
+                }
+
+                // Get latitude and longitude from the first search result
+                var lat = data[0].lat;
+                var lon = data[0].lon;
+
+                // Use Open-Meteo API to fetch current weather data for the location
+                fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + "&current_weather=true")
+                    .then(function(response) {
+                        // Convert weather response to JSON
+                        return response.json();
+                    })
+                    .then(function(weatherData) {
+                        // Get the current temperature from the data
+                        var temp = weatherData.current_weather.temperature;
+
+```
 
 
  ## Engineering Design Process 
