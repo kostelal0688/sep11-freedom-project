@@ -1,7 +1,7 @@
 # Entry 5 (Finishing MVP)
 ##### 4/26/25
 ## Content
- In the past few weeks, I continued learning my tool Open-Meteo API to get weather data for my app while also finishing my MVP. 
+ In the past few weeks, I continued learning my tool Open-Meteo API to get weather data for my app while also finishing my MVP. To learn I used [Nominatim API](https://nominatim.org/release-docs/3.6/develop/Postcodes/), and [Open-Meteo APi](https://open-meteo.com/en/docs?latitude=40.7143&longitude=-74.006&current=temperature_2m&forecast_days=1)
 
  ### How I finished my MVP:
 
