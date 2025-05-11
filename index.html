@@ -102,6 +102,8 @@
                     .then(function(weatherData) {
                         // Get the current temperature from the data
                         var temp = weatherData.current_weather.temperature;
+                        var fahrenheit = (temp * 9/5) + 32;
+
 
                         // Give clothing advice based on the temperature
                         var advice = "";
@@ -114,9 +116,8 @@
                         } else {
                             advice = "It's hot! Wear shorts and a t-shirt.☀️";
                         }
-
                         // Show the temperature and the clothing advice in the result area
-                        result.innerText = "Temperature: " + temp + "°C\n" + advice;
+                        result.innerText = "Temperature: " + temp + "°C " + "or " + fahrenheit + "°F\n" + advice;
                     });
                 })
             .catch(function(error) {
