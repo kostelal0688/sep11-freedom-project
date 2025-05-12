@@ -1,13 +1,19 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Do you struggle with what to wear becuause of not knowing what the weather is like?
 
 ## Product
-* 
+* My website gives the weather based on zip-code and gives advice of what to wear. 
 
 ## Process
-* 
+* A picture of wireframe
+* Plan
+    * MVP: Used the Nominatim API to turn the zip code into latitude and longitude coordinates. If the zip code is invalid the app tells the user "Invalid zip code." If the zip code is valid, I used the coordinates to call the Open-Meteo API and get the current weather data.
+    * Beyond MVP: use fahrenheit and celsius
+ * Code snippets
+     * APIS code
+ 
 
 ## Conclusion
 * 
