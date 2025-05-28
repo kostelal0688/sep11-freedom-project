@@ -12,7 +12,7 @@ After the presentations, we had an expo where everyone shared their projects inf
 One important takeaway from the expo was to be natural when talking about your project. I realized it’s okay not to follow your elevator pitch word for word. Being yourself and speaking naturally helps make a better connection with your audience.
 
 ## Engineering Design Process
-During this part of the project, I was at step 8 of the engineering design process, which focuses on communicating the results. This stage was all about sharing the final version of my website with others — including my classmates, teachers, and judges. It gave me the chance to explain how I built the project, what challenges I faced, and what I learned along the way. Communicating the results was important because it helped me reflect on my work and also get feedback from others. Presenting my project allowed me to practice my public speaking skills and build confidence.
+During this part of the project, I was at step 8 of the engineering design process, which focuses on communicating the results. This stage was all about sharing the final version of my website with others including my classmates, teachers, and judges. It gave me the chance to explain how I built the project, what challenges I faced, and what I learned along the way. Communicating the results was important because it helped me reflect on my work and also get feedback from others. Presenting my project allowed me to practice my public speaking skills and build confidence.
 
 ## Skills
 Some skills that I’ve learned from working on this blog are **** and ****.
