@@ -15,7 +15,12 @@ One important takeaway from the expo was to be natural when talking about your p
 During this part of the project, I was at step 8 of the engineering design process, which focuses on communicating the results. This stage was all about sharing the final version of my website with others including my classmates, teachers, and judges. It gave me the chance to explain how I built the project, what challenges I faced, and what I learned along the way. Communicating the results was important because it helped me reflect on my work and also get feedback from others. Presenting my project allowed me to practice my public speaking skills and build confidence.
 
 ## Skills
-Some skills that I’ve learned from working on this blog are **** and ****.
+Some skills that I’ve learned from working on this blog are **communication** and **organization**.
+### Communication
+A key skill I developed during this part of the project was communication. Presenting my website to my peers helped me improve as a public speaker. I learned how to explain my ideas clearly and confidently, which made sharing my work much easier and more effective.
+
+### Organization
+Another important skill I gained was organization. Preparing slides and an elevator pitch required me to carefully organize my thoughts and decide what information was most important to share. This experience taught me how to structure my ideas so that my presentation and expo talks were clear, focused, and easy to follow.
 
 ## Summary 
 [Previous](entry05.md) | [Next](entry07.md)
