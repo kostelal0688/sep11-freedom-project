@@ -1,7 +1,6 @@
-# Entry 6
-##### X/X/XX
+# Entry 6 (Presentation and Expo)
+##### 5/28/25
 
-Text
 
 [Previous](entry05.md) | [Next](entry07.md)
 
