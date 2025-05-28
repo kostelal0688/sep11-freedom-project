@@ -23,6 +23,4 @@ A key skill I developed during this part of the project was communication. Prese
 Another important skill I gained was organization. Preparing slides and an elevator pitch required me to carefully organize my thoughts and decide what information was most important to share. This experience taught me how to structure my ideas so that my presentation and expo talks were clear, focused, and easy to follow.
 
 ## Summary 
-[Previous](entry05.md) | [Next](entry07.md)
-
-[Home](../README.md)
+To conclude, I am very happy and proud of both my website and my presentation. This project taught me many valuable skills, from coding and design to communication and organization. Sharing my work with others was a rewarding experience, and I feel confident that I grew a lot throughout the process.
