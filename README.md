@@ -17,18 +17,22 @@ For my project, I chose to independently study **JSON APIS** in order to help me
 Global/Environmental:
   * Reduces waste by helping people make the most of the clothes they already own.
   * May help reduce fast fashion consumption by promoting better planning.
+    
 Social/Individual:
   * Helps people dress more comfortably and safely for weather conditions.
   * Makes it easier to plan your day and feel confident about your outfit.
+    
 Economic:
   * Saves money by helping users avoid unnecessary clothing purchases.
 ##### CONS
 Infrastructure/Technology:
   * If the weather API has technical issues, the app may stop working.
   * Users need an internet connection to use it.
+
 Social/Privacy:
   * Collecting location data for weather info could raise privacy concerns.
   * People may become too reliant on the app instead of checking multiple sources.
+
 Economic:
   * Might reduce demand for professional stylists or weather-related media.
 ## Blog
