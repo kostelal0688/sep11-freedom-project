@@ -14,11 +14,16 @@ For my project, I chose to independently study **JSON APIS** in order to help me
 
 ## Implications
 ##### PROS
-* 
+* Helps people dress right for the weather, so they stay comfortable and healthy.
+* Makes planning your day easier by knowing the weather ahead.
+* Saves money by avoiding buying clothes that don’t fit the weather.
+* Might help the environment by encouraging people to use their clothes better.
 ##### CONS
+* The app depends on weather websites, so if they have problems, the app might not work.
+* Using location data might raise privacy concerns.
+* People might rely too much on the app and forget to check the weather themselves.
+* Could affect jobs related to weather forecasting or styling.
 * 
-
-
 ## Blog
 Below you will find my blog about how I made my project.
 
