@@ -2,9 +2,9 @@
 by **Kostela Lila**
 
 ## Context
-I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
+I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool. 
 
-For my project, I chose to independently study **JSON APIS** in order to help me make **a website that tells you what clothes to wear based on the weather. It uses real weather data from the internet to help people choose the right outfit.**.
+For my project, I chose to independently study **JSON APIS** in order to help me make **a website that tells you what clothes to wear based on the weather. It uses real weather data from the internet to help people choose the right outfit.**.  The goal of this project is to combine real-time weather data with practical advice to help users dress appropriately. 
 
 ## Links
 
@@ -14,16 +14,23 @@ For my project, I chose to independently study **JSON APIS** in order to help me
 
 ## Implications
 ##### PROS
-* Helps people dress right for the weather, so they stay comfortable and healthy.
-* Makes planning your day easier by knowing the weather ahead.
-* Saves money by avoiding buying clothes that don’t fit the weather.
-* Might help the environment by encouraging people to use their clothes better.
+Global/Environmental:
+  * Reduces waste by helping people make the most of the clothes they already own.
+  * May help reduce fast fashion consumption by promoting better planning.
+Social/Individual:
+  * Helps people dress more comfortably and safely for weather conditions.
+  * Makes it easier to plan your day and feel confident about your outfit.
+Economic:
+  * Saves money by helping users avoid unnecessary clothing purchases.
 ##### CONS
-* The app depends on weather websites, so if they have problems, the app might not work.
-* Using location data might raise privacy concerns.
-* People might rely too much on the app and forget to check the weather themselves.
-* Could affect jobs related to weather forecasting or styling.
-* 
+Infrastructure/Technology:
+  * If the weather API has technical issues, the app may stop working.
+  * Users need an internet connection to use it.
+Social/Privacy:
+  * Collecting location data for weather info could raise privacy concerns.
+  * People may become too reliant on the app instead of checking multiple sources.
+Economic:
+  * Might reduce demand for professional stylists or weather-related media.
 ## Blog
 Below you will find my blog about how I made my project.
 
