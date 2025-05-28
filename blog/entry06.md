@@ -9,8 +9,7 @@ I was a little nervous before my presentation, but I was also confident because 
 
 After the presentations, we had an expo where everyone shared their projects informally in a “science fair” style setup in the cafeteria. Alumni judges were there to evaluate the projects and pick finalists. For this, we had to prepare an elevator pitch—a short, persuasive summary of our work. Here’s a link to my [Elevator Pitch Notes](https://docs.google.com/document/d/18G3r9jk1bmDWJ3BkuWVXHI64NJDcVR7q2WBbFT5J0dE/edit?tab=t.0)
 
-
-
+One important takeaway from the expo was to be natural when talking about your project. I realized it’s okay not to follow your elevator pitch word for word. Being yourself and speaking naturally helps make a better connection with your audience.
 
 ## Engineering Design Process
 
